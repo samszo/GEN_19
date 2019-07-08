@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+ <head>
+  <title>Personal Dashboard</title>
+  <type>Premium</type>
+  <creationDate>2019-07-08 11:58:36</creationDate>
+ </head>
+ <body>
+  <outline title="Bienvenue" icon="home" iconColor="blue" cols="4" layout="4-1">
+   <outline type="WelcomeVip" title="Welcome to your Dashboard" row="1000" col="1">
+    <outline color="borderless" mode="welcome"/>
+   </outline>
+   <outline type="PotionWizard" title="Alert me if it'll rain tomorrow" row="4000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Alert me if it'll rain tomorrow&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.weather&quot;,&quot;reference&quot;:&quot;weather_forecast&quot;,&quot;name&quot;:&quot;com.weather.city.{city}.forecast.{day}&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;weatherConditions&quot;:&quot;Rain&quot;},&quot;formula&quot;:&quot;bluntConditions is 'Rain'&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Alert me if it'll rain tomorrow"/>
+   </outline>
+   <outline type="Weather" title="Paris, France" row="1000" col="3">
+    <outline unit="1" town="48.857/2.352"/>
+   </outline>
+   <outline type="TodoList" title="To Do List" row="1000" col="4">
+    <outline todos="{&quot;t1&quot;:{&quot;title&quot;:&quot;Organize your life!&quot;,&quot;color&quot;:&quot;#078d93&quot;,&quot;id&quot;:&quot;t1&quot;},&quot;t2&quot;:{&quot;title&quot;:&quot;Write Things Down&quot;,&quot;color&quot;:&quot;#96BC0D&quot;,&quot;id&quot;:&quot;t2&quot;},&quot;t3&quot;:{&quot;title&quot;:&quot;Make Schedules and Deadlines&quot;,&quot;color&quot;:&quot;#96BC0D&quot;,&quot;id&quot;:&quot;t3&quot;}}"/>
+   </outline>
+  </outline>
+  <outline title="Lifestyle &gt; Tourisme (FR)" icon="rss" iconColor="grey" cols="4" layout="4-1">
+   <outline title="Voyage : Toute l'actualité sur Le Monde.fr." xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;75af3c95-5fa5-11e6-a8e6-782bcb10e966&quot;,&quot;token&quot;:&quot;c200852db43f6c6cfd7536fc3d971c14e1df939e&quot;}]}&amp;format=atom" type="rss" row="1000" col="1"/>
+   <outline title="Voyage : Toute l'actualité sur Le Monde.fr." xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f950baee-701b-11e6-acef-782bcb11773e&quot;,&quot;token&quot;:&quot;747491ffe4debc63a0d074b28006c04f4c7bfc79&quot;}]}&amp;format=atom" type="rss" row="2000" col="1"/>
+   <outline type="SmartFilter" title="Today's articles from &quot;Lifestyle &amp;gt; Tourisme (FR)&quot; tab" row="1000" col="2">
+    <outline title="Today's articles from &quot;Lifestyle &gt; Tourisme (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Lifestyle &gt; Tourisme (FR)&quot;]}}" searchToken="" view="mosaic" viewHeight="medium" color="" date_from="-2days" date_to="now" range="daily"/>
+   </outline>
+   <outline type="SmartFilter" title="Today's articles from &quot;Lifestyle &amp;gt; Tourisme (FR)&quot; tab" row="2000" col="2">
+    <outline title="Today's articles from &quot;Lifestyle &gt; Tourisme (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Lifestyle &gt; Tourisme (FR)&quot;]}}" searchToken="" view="mosaic" viewHeight="medium" color="" date_from="-2days" date_to="now" range="daily"/>
+   </outline>
+   <outline type="PotionWizard" title="Tourisme: Topic watch" row="3000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Tourisme: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Tourisme: Topic watch"/>
+   </outline>
+   <outline type="PotionWizard" title="Tourisme: Topic watch" row="4000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Tourisme: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Tourisme: Topic watch"/>
+   </outline>
+   <outline type="Library" row="5000" col="2" title="Tourisme" viewHeight="medium" libraryId="2313886289" libraryToken="5549c827777c9f4f3789334c2428cbb461a8e69a"/>
+   <outline type="Library" row="6000" col="2" title="Tourisme" viewHeight="medium" libraryId="2313514199" libraryToken="5549c827777c9f4f3789334c2428cbb461a8e69a"/>
+   <outline title="Curieuse Voyageuse" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;fa7ed4c2-701b-11e6-acef-782bcb11773e&quot;,&quot;token&quot;:&quot;29941b093f9fdcad70b98251625c50cd2a89d8d4&quot;}]}&amp;format=atom" type="rss" row="1000" col="3"/>
+   <outline title="Curieuse Voyageuse" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;748d3f42-5fa5-11e6-a8e6-782bcb10e966&quot;,&quot;token&quot;:&quot;07172be35caca45f40cd562715defec53a4c0ab2&quot;}]}&amp;format=atom" type="rss" row="2000" col="3"/>
+   <outline title="Escale de nuit" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;ef3657b6-26ca-11e8-9116-a0369fec958c&quot;,&quot;token&quot;:&quot;ee264e82e7ab92c7aefeb690ac09f7632c8a4e55&quot;}]}&amp;format=atom" type="rss" row="3000" col="3"/>
+   <outline title="✖ Carnets de traverse" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;dad48358-a5cf-11e6-b015-782bcb11773e&quot;,&quot;token&quot;:&quot;083ef0bda1c429a7d5eb6c0af9b9a13663c1a55e&quot;}]}&amp;format=atom" type="rss" row="4000" col="3"/>
+   <outline title="TendanceHotellerie .fr" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;76f06975-5fa5-11e6-a8e6-782bcb10e966&quot;,&quot;token&quot;:&quot;342c1a28ead788b9e1bd80afa1959cd776e4eb5a&quot;}]}&amp;format=atom" type="rss" row="5000" col="3"/>
+   <outline title="Voyagesetc…, le blog du voyage en solo" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;dad48356-a5cf-11e6-b015-782bcb11773e&quot;,&quot;token&quot;:&quot;68ba98010bcecbb4b1bedebe1c2e2ac87c0eb018&quot;}]}&amp;format=atom" type="rss" row="6000" col="3"/>
+   <outline title="Votre Tour du Monde – Blog voyage, et plus encore!" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;ef319366-26ca-11e8-ae56-a0369fec958c&quot;,&quot;token&quot;:&quot;2b10e1eb3689c589c43295a610489d219408a252&quot;}]}&amp;format=atom" type="rss" row="1000" col="4"/>
+   <outline title="Votre Tour du Monde – Blog voyage, et plus encore!" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;2cdbfdd5-f43a-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;da6c7ae4bac4e62745741ab45448a894fae3f806&quot;}]}&amp;format=atom" type="rss" row="2000" col="4"/>
+   <outline title="Blog tourisme" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f950baeb-701b-11e6-acef-782bcb11773e&quot;,&quot;token&quot;:&quot;87b0730b13213cca7e952adc7a3a47cfb60d8df9&quot;}]}&amp;format=atom" type="rss" row="3000" col="4"/>
+   <outline title="Blog tourisme" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;748d3f36-5fa5-11e6-a8e6-782bcb10e966&quot;,&quot;token&quot;:&quot;97ae6410fb8621fd020ec6dff9b2ee37a46ebe5b&quot;}]}&amp;format=atom" type="rss" row="4000" col="4"/>
+   <outline title="Voyagesetc…, le blog du voyage en solo" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;76f06980-5fa5-11e6-a8e6-782bcb10e966&quot;,&quot;token&quot;:&quot;176a25300736b59679b8364c4abaa3c0d377fe48&quot;}]}&amp;format=atom" type="rss" row="5000" col="4"/>
+   <outline title="Escale de nuit" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;2cdbfdd6-f43a-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;718f4228519495cc1b837a6583e07e780a0b3f85&quot;}]}&amp;format=atom" type="rss" row="6000" col="4"/>
+  </outline>
+  <outline title="Lifestyle &gt; Mode &amp; Beauté (FR)" icon="rss" iconColor="grey" cols="4" layout="4-1">
+   <outline title="Le dressing de Leeloo" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;ef3ac4fe-26ca-11e8-bd72-a0369fec958c&quot;,&quot;token&quot;:&quot;4a10a80111dbf5a33a3d52be5a267fc641e91e22&quot;}]}&amp;format=atom" type="rss" row="1000" col="1"/>
+   <outline title="Le dressing de Leeloo" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;3c94b90a-f439-11e6-bdf0-782bcb103767&quot;,&quot;token&quot;:&quot;340f1bc1c54cbd5d332ca90c1d029186883a55f8&quot;}]}&amp;format=atom" type="rss" row="2000" col="1"/>
+   <outline type="SmartFilter" title="Today's articles from &quot;Lifestyle &amp;gt; Mode &amp; Beauté (FR)&quot; tab" row="1000" col="2">
+    <outline title="Today's articles from &quot;Lifestyle &gt; Mode &amp; Beauté (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Lifestyle &gt; Mode &amp; Beauté (FR)&quot;]}}" searchToken="" view="mosaic" viewHeight="medium" color="" date_from="-2days" date_to="now" range="daily"/>
+   </outline>
+   <outline type="SmartFilter" title="Today's articles from &quot;Lifestyle &amp;gt; Mode &amp; Beauté (FR)&quot; tab" row="2000" col="2">
+    <outline title="Today's articles from &quot;Lifestyle &gt; Mode &amp; Beauté (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Lifestyle &gt; Mode &amp; Beauté (FR)&quot;]}}" searchToken="" view="mosaic" viewHeight="medium" color="" date_from="-2days" date_to="now" range="daily"/>
+   </outline>
+   <outline type="PotionWizard" title="Mode &amp; Beauté: Topic watch" row="3000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Mode &amp; Beauté: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Mode &amp; Beauté: Topic watch"/>
+   </outline>
+   <outline type="PotionWizard" title="Mode &amp; Beauté: Topic watch" row="4000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Mode &amp; Beauté: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Mode &amp; Beauté: Topic watch"/>
+   </outline>
+   <outline type="Library" row="5000" col="2" title="Mode &amp; Beauté" viewHeight="medium" libraryId="2316945666" libraryToken="c5984e7d6d5af7a1bc2efd6aef2628d5898ec92b"/>
+   <outline type="Library" row="6000" col="2" title="Mode &amp; Beauté" viewHeight="medium" libraryId="2316944677" libraryToken="c5984e7d6d5af7a1bc2efd6aef2628d5898ec92b"/>
+   <outline title="Audrey(@audreylombard) - Instagram photos and videos | WEBSTAGRAM" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;7cfa6162-df16-11e6-afb4-782bcb10e966&quot;,&quot;token&quot;:&quot;5bf1b55180b34b4ce69ad15f6d694aa8721f8198&quot;}]}&amp;format=atom" type="rss" row="1000" col="3"/>
+   <outline title="Audrey(@audreylombard) - Instagram photos and videos | WEBSTAGRAM" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;ef42769a-26ca-11e8-b127-a0369fec958c&quot;,&quot;token&quot;:&quot;8e2b639517f0b3797fa05c1ccd3f471e9898984c&quot;}]}&amp;format=atom" type="rss" row="2000" col="3"/>
+   <outline title="Atelier Doré" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;4af3d367-e95b-11e6-b452-782bcb11773e&quot;,&quot;token&quot;:&quot;790aa51169319795b9ceec7c984b83c70a216910&quot;}]}&amp;format=atom" type="rss" row="3000" col="3"/>
+   <outline title="Atelier Doré" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;d4860d59-be23-11e6-8ba7-782bcb11749d&quot;,&quot;token&quot;:&quot;18593ad3310cdc7335903a67b49de00dbc89a53a&quot;}]}&amp;format=atom" type="rss" row="4000" col="3"/>
+   <outline title="News - FashionNetwork.com France" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;ef4eb752-26ca-11e8-a178-a0369fec958c&quot;,&quot;token&quot;:&quot;3c23df8ca2c1793cc2da60fad18914895fb03b49&quot;}]}&amp;format=atom" type="rss" row="5000" col="3"/>
+   <outline title="LEXPRESS.fr - RSS Styles Mode" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;7c18e3ce-df16-11e6-afb4-782bcb10e966&quot;,&quot;token&quot;:&quot;2f4623c1fa9bb3d391d3e257f4905a993f4bc59e&quot;}]}&amp;format=atom" type="rss" row="6000" col="3"/>
+   <outline title="Flux d'actualité Mode Elle.fr" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;ef3d7208-26ca-11e8-b129-a0369fec958c&quot;,&quot;token&quot;:&quot;1fa7d814f72566cf8cea170375c889388d76672e&quot;}]}&amp;format=atom" type="rss" row="1000" col="4"/>
+   <outline title="Flux d'actualité Mode Elle.fr" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;7c18e3d0-df16-11e6-afb4-782bcb10e966&quot;,&quot;token&quot;:&quot;165a2a0ced70d219db802d01525225a14d79df6c&quot;}]}&amp;format=atom" type="rss" row="2000" col="4"/>
+   <outline title="La Revue de Kenza" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;7927ce89-e16d-11e6-b3e1-782bcb11773e&quot;,&quot;token&quot;:&quot;ff9b09dd68c8a356223036d5f6b14763da8f8b18&quot;}]}&amp;format=atom" type="rss" row="3000" col="4"/>
+   <outline title="La Revue de Kenza" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;ef46880c-26ca-11e8-af23-a0369fec958c&quot;,&quot;token&quot;:&quot;daf0ede5a62b3c3b859e79431ca71ab82840ec13&quot;}]}&amp;format=atom" type="rss" row="4000" col="4"/>
+   <outline title="MANUELA MIRÓ" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;ef4a14f4-26ca-11e8-8773-a0369fec958c&quot;,&quot;token&quot;:&quot;32ddd3255132ab24823acf60ef614a1d0bd89430&quot;}]}&amp;format=atom" type="rss" row="5000" col="4"/>
+   <outline title="MANUELA MIRÓ" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;7927ce88-e16d-11e6-b3e1-782bcb11773e&quot;,&quot;token&quot;:&quot;c4d613720bc3ebf83e519b30a1e805f1bf5c42b2&quot;}]}&amp;format=atom" type="rss" row="6000" col="4"/>
+  </outline>
+  <outline title="Lifestyle &gt; Auto-Moto (FR)" icon="rss" iconColor="grey" cols="4" layout="4-1">
+   <outline title="Automobile Propre" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;ef9c2014-26ca-11e8-81d9-a0369fec958c&quot;,&quot;token&quot;:&quot;94a819819d2029740bdf240942043d0a3f1a19af&quot;}]}&amp;format=atom" type="rss" row="1000" col="1"/>
+   <outline title="Automobile Propre" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;2cdbfdce-f43a-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;03e0a62014afdf7772b536025f363b7196ad8b8c&quot;}]}&amp;format=atom" type="rss" row="2000" col="1"/>
+   <outline type="SmartFilter" title="Today's articles from &quot;Lifestyle &amp;gt; Auto-Moto (FR)&quot; tab" row="1000" col="2">
+    <outline title="Today's articles from &quot;Lifestyle &gt; Auto-Moto (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Lifestyle &gt; Auto-Moto (FR)&quot;]}}" searchToken="" view="list" viewHeight="medium" color="" date_from="-2days" date_to="now" range="daily"/>
+   </outline>
+   <outline type="SmartFilter" title="Today's articles from &quot;Lifestyle &amp;gt; Auto-Moto (FR)&quot; tab" row="2000" col="2">
+    <outline title="Today's articles from &quot;Lifestyle &gt; Auto-Moto (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Lifestyle &gt; Auto-Moto (FR)&quot;]}}" searchToken="" view="list" viewHeight="medium" color="" date_from="-2days" date_to="now" range="daily"/>
+   </outline>
+   <outline type="PotionWizard" title="Auto-Moto: Topic watch" row="3000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Auto-Moto: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Auto-Moto: Topic watch"/>
+   </outline>
+   <outline type="PotionWizard" title="Auto-Moto: Topic watch" row="4000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Auto-Moto: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Auto-Moto: Topic watch"/>
+   </outline>
+   <outline type="Library" row="5000" col="2" title="Auto-Moto" viewHeight="medium" libraryId="2316951278" libraryToken="9af99793918a27ff47e3728fe2bffa0f2af050c9"/>
+   <outline type="Library" row="6000" col="2" title="Auto-Moto" viewHeight="medium" libraryId="2316946240" libraryToken="9af99793918a27ff47e3728fe2bffa0f2af050c9"/>
+   <outline title="4h10" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;2cdbfdd0-f43a-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;980997a89262e7118fde5fd8fcdbc4fd49a6ad9b&quot;}]}&amp;format=atom" type="rss" row="1000" col="3"/>
+   <outline title="4h10" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efa337d2-26ca-11e8-92ea-a0369fec958c&quot;,&quot;token&quot;:&quot;31c04f5c0ad00fcdb257b19bacdebeb5d7925796&quot;}]}&amp;format=atom" type="rss" row="2000" col="3"/>
+   <outline title="Motomag, le site de Moto Magazine" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efac5a92-26ca-11e8-9359-a0369fec958c&quot;,&quot;token&quot;:&quot;ae09e3e8465113ffe096f3d4320d83a9e3fb73fe&quot;}]}&amp;format=atom" type="rss" row="3000" col="3"/>
+   <outline title="Motomag, le site de Moto Magazine" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;2cdbfdd2-f43a-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;4dc26582f46eadbc67bd17cdaecd5460d77eebd2&quot;}]}&amp;format=atom" type="rss" row="4000" col="3"/>
+   <outline title="RSS Autoplus.fr" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efb1ebe2-26ca-11e8-a7b5-a0369fec958c&quot;,&quot;token&quot;:&quot;da6a7a4fa35cdf8dd41aa38dde34bcf1b5923d24&quot;}]}&amp;format=atom" type="rss" row="5000" col="3"/>
+   <outline title="Caradisiac.com : toute l'actu auto en continu" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;2cdbfdd4-f43a-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;2cbe6e83b39fe6658f62d5af8abb382334a2a513&quot;}]}&amp;format=atom" type="rss" row="6000" col="3"/>
+   <outline title="Turbo.fr - L'info en continu" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efa018a4-26ca-11e8-b968-a0369fec958c&quot;,&quot;token&quot;:&quot;3a0c910708dba3474737a8df6cf2293cd8310cc1&quot;}]}&amp;format=atom" type="rss" row="1000" col="4"/>
+   <outline title="Turbo.fr - L'info en continu" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;2cdbfdcf-f43a-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;3794044d4d036768489f21aa34254c60e757065c&quot;}]}&amp;format=atom" type="rss" row="2000" col="4"/>
+   <outline title="RSS Autoplus.fr" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;2cdbfdd1-f43a-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;88b5d31e27d214ee287886197dda2af282bb0c44&quot;}]}&amp;format=atom" type="rss" row="3000" col="4"/>
+   <outline title="Motor1.com France - Actualités" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efa9d3da-26ca-11e8-9f40-a0369fec958c&quot;,&quot;token&quot;:&quot;de58ff71128d66c48c7616ac1a0ecff1879afeff&quot;}]}&amp;format=atom" type="rss" row="4000" col="4"/>
+   <outline title="Caradisiac.com : toute l'actu auto en continu" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efafaf9e-26ca-11e8-a903-a0369fec958c&quot;,&quot;token&quot;:&quot;2800d1a915655976cb7ae04ae7866dacb22e4b5a&quot;}]}&amp;format=atom" type="rss" row="5000" col="4"/>
+   <outline title="En voiture !" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;2cdbfdd3-f43a-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;3a755b7adf94b6afdb89c109a4dcf12a8e605d9d&quot;}]}&amp;format=atom" type="rss" row="6000" col="4"/>
+  </outline>
+  <outline title="Lifestyle &gt; Luxe (FR)" icon="rss" iconColor="grey" cols="4" layout="4-1">
+   <outline title="LeLuxeEstVivant" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;ef531180-26ca-11e8-ba51-a0369fec958c&quot;,&quot;token&quot;:&quot;be732783e4fdb0b680555b7ff8d7c837552c9fb9&quot;}]}&amp;format=atom" type="rss" row="1000" col="1"/>
+   <outline title="LeLuxeEstVivant" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;a9f24aa5-df16-11e6-afb4-782bcb10e966&quot;,&quot;token&quot;:&quot;c6823949ed98f01199a04fbe3c64f1a8952ca8b3&quot;}]}&amp;format=atom" type="rss" row="2000" col="1"/>
+   <outline type="SmartFilter" title="Today's articles from &quot;Lifestyle &gt; Luxe (FR)&quot; tab" row="1000" col="2">
+    <outline title="Today's articles from &quot;Lifestyle &gt; Luxe (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Lifestyle &gt; Luxe (FR)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="Today's articles from &quot;Lifestyle &gt; Luxe (FR)&quot; tab" row="2000" col="2">
+    <outline title="Today's articles from &quot;Lifestyle &gt; Luxe (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Lifestyle &gt; Luxe (FR)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="Luxe: Topic watch" row="3000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Luxe: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Luxe: Topic watch"/>
+   </outline>
+   <outline type="PotionWizard" title="Luxe: Topic watch" row="4000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Luxe: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Luxe: Topic watch"/>
+   </outline>
+   <outline type="Library" row="5000" col="2" title="Luxe" viewHeight="medium" libraryId="2317779428" libraryToken="acae93aa14eb59cbfe74c78bbfa72025e35d0247"/>
+   <outline type="Library" row="6000" col="2" title="Luxe" viewHeight="medium" libraryId="2317779513" libraryToken="acae93aa14eb59cbfe74c78bbfa72025e35d0247"/>
+   <outline title="Le Magazine sur l'actualité du luxe – TheMilliardaire" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;a9f24aaa-df16-11e6-afb4-782bcb10e966&quot;,&quot;token&quot;:&quot;77827023826df7caad49144e5908f3c2b411082e&quot;}]}&amp;format=atom" type="rss" row="1000" col="3"/>
+   <outline title="Luxsure" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;ef5b04ee-26ca-11e8-8a9e-a0369fec958c&quot;,&quot;token&quot;:&quot;17fc0862c430f5053b20850f22496386909cae83&quot;}]}&amp;format=atom" type="rss" row="2000" col="3"/>
+   <outline title="Motorlegend - Derniers articles" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;a9f24aad-df16-11e6-afb4-782bcb10e966&quot;,&quot;token&quot;:&quot;018693fbc9260f3e04680b9b7aa2a055d0e3df78&quot;}]}&amp;format=atom" type="rss" row="3000" col="3"/>
+   <outline title="Luxury Design" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;ef630a0e-26ca-11e8-9ffc-a0369fec958c&quot;,&quot;token&quot;:&quot;fae3d05262f79af252cd73f9e12286dacfd9690e&quot;}]}&amp;format=atom" type="rss" row="4000" col="3"/>
+   <outline title="Horlogerie-Suisse.Com" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;aaee3343-df16-11e6-afb4-782bcb10e966&quot;,&quot;token&quot;:&quot;61bc444b00e72df1f9f56ed971e422be431eaaf0&quot;}]}&amp;format=atom" type="rss" row="1000" col="4"/>
+   <outline title="Le Magazine sur l'actualité du luxe – TheMilliardaire" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;ef580122-26ca-11e8-bc2f-a0369fec958c&quot;,&quot;token&quot;:&quot;b3cff9e3587236dfdca8b8a8396bce5c822a4436&quot;}]}&amp;format=atom" type="rss" row="2000" col="4"/>
+   <outline title="ABC Luxe" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;a9f24aa7-df16-11e6-afb4-782bcb10e966&quot;,&quot;token&quot;:&quot;64b60743345fa136108bb361da38e35102315e54&quot;}]}&amp;format=atom" type="rss" row="3000" col="4"/>
+   <outline title="Motorlegend - Derniers articles" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;ef5f167e-26ca-11e8-a2b8-a0369fec958c&quot;,&quot;token&quot;:&quot;f2dc215243c64906ada1d8c1ccb988a2e0208bab&quot;}]}&amp;format=atom" type="rss" row="4000" col="4"/>
+  </outline>
+  <outline title="Tech &gt; Apple (FR)" icon="rss" iconColor="grey" cols="4" layout="4-1">
+   <outline title="MacGeneration | iGeneration | WatchGeneration" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;69a1461a-5fa5-11e6-a8e6-782bcb10e966&quot;,&quot;token&quot;:&quot;326daa115e512cf438f14161203153a38903e32a&quot;}]}&amp;format=atom" type="rss" row="1000" col="1"/>
+   <outline title="MacGeneration | iGeneration | WatchGeneration" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;e9b5596c-b241-11e6-acd0-782bcb10e966&quot;,&quot;token&quot;:&quot;b83d013ed2112a5602e83a2ad8d68553a9a69edc&quot;}]}&amp;format=atom" type="rss" row="2000" col="1"/>
+   <outline type="SmartFilter" title="Today's articles from &quot;Tech &gt; Apple (FR)&quot; tab" row="1000" col="2">
+    <outline title="Today's articles from &quot;Tech &gt; Apple (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Tech &gt; Apple (FR)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="Today's articles from &quot;Tech &gt; Apple (FR)&quot; tab" row="2000" col="2">
+    <outline title="Today's articles from &quot;Tech &gt; Apple (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Tech &gt; Apple (FR)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="Apple: Topic watch" row="3000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Apple: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Apple: Topic watch"/>
+   </outline>
+   <outline type="PotionWizard" title="Apple: Topic watch" row="4000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Apple: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Apple: Topic watch"/>
+   </outline>
+   <outline type="Library" row="5000" col="2" title="Apple" viewHeight="medium" libraryId="2313889637" libraryToken="f2005884bf34fb24fab6ce2e54e529a3ae2e4add"/>
+   <outline type="Library" row="6000" col="2" title="Apple" viewHeight="medium" libraryId="2313889539" libraryToken="f2005884bf34fb24fab6ce2e54e529a3ae2e4add"/>
+   <outline title="monblogApple" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;eaa371b0-b241-11e6-acd0-782bcb10e966&quot;,&quot;token&quot;:&quot;5867c0b8e4ab4f66e201a8202e8dab45f22f8ef9&quot;}]}&amp;format=atom" type="rss" row="1000" col="3"/>
+   <outline title="monblogApple" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;6b9cc192-5fa5-11e6-a8e6-782bcb10e966&quot;,&quot;token&quot;:&quot;00eff5671f28a9b9baa1eb693e782560aa7757f1&quot;}]}&amp;format=atom" type="rss" row="2000" col="3"/>
+   <outline title="Mac4Ever.com - Actualité" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;6a720bb2-5fa5-11e6-a8e6-782bcb10e966&quot;,&quot;token&quot;:&quot;3c0f35b22c978a1efff25708cc38739b2273a76c&quot;}]}&amp;format=atom" type="rss" row="3000" col="3"/>
+   <outline title="Mac4Ever.com - Actualité" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;68e89897-b22b-11e6-b093-782bcb11773e&quot;,&quot;token&quot;:&quot;d2a00906332050537aea97c81ab48471a0e2b91a&quot;}]}&amp;format=atom" type="rss" row="4000" col="3"/>
+   <outline title="iGeneration" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;6a720bb8-5fa5-11e6-a8e6-782bcb10e966&quot;,&quot;token&quot;:&quot;8523044e138ea94c16ef01d6aa793382e1286198&quot;}]}&amp;format=atom" type="rss" row="5000" col="3"/>
+   <outline title="iGeneration" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;e9b55977-b241-11e6-acd0-782bcb10e966&quot;,&quot;token&quot;:&quot;f19744ebfdb097d1c179f55c856457eb3c835482&quot;}]}&amp;format=atom" type="rss" row="6000" col="3"/>
+   <outline title="MacBidouille.com - Actualités et Bidouilles sur Mac, iPhone, iPad &amp;amp; Apple Watch" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;6a720bbf-5fa5-11e6-a8e6-782bcb10e966&quot;,&quot;token&quot;:&quot;01f6bf269e94e19d0a32ace486fe9bbfce8a736b&quot;}]}&amp;format=atom" type="rss" row="1000" col="4"/>
+   <outline title="MacBidouille.com - Actualités et Bidouilles sur Mac, iPhone, iPad &amp;amp; Apple Watch" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;eaa371ab-b241-11e6-acd0-782bcb10e966&quot;,&quot;token&quot;:&quot;a3753492fa23f18e739bbe81f8d83986fe99bfe5&quot;}]}&amp;format=atom" type="rss" row="2000" col="4"/>
+   <outline title="LogicielMac.com - les actualités" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;eaa371a8-b241-11e6-acd0-782bcb10e966&quot;,&quot;token&quot;:&quot;e27639257ff79c434f73f329df16aebc7674bdc0&quot;}]}&amp;format=atom" type="rss" row="3000" col="4"/>
+   <outline title="LogicielMac.com - les actualités" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;6cbe2b44-5fa5-11e6-a8e6-782bcb10e966&quot;,&quot;token&quot;:&quot;2762c24b73551e6a34ca18b1ae4ec26e7e49cc73&quot;}]}&amp;format=atom" type="rss" row="4000" col="4"/>
+   <outline title="Actualités iOS - GamerGen.com" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;6b9cc18a-5fa5-11e6-a8e6-782bcb10e966&quot;,&quot;token&quot;:&quot;663b4cb4f028e3ca957d9fd5a9bdb8f6fc32609f&quot;}]}&amp;format=atom" type="rss" row="5000" col="4"/>
+   <outline title="Actualités iOS - GamerGen.com" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;eaa371a7-b241-11e6-acd0-782bcb10e966&quot;,&quot;token&quot;:&quot;5967e32da0cb48f37c7136d658fd79c4d074f640&quot;}]}&amp;format=atom" type="rss" row="6000" col="4"/>
+  </outline>
+  <outline title="Tech &gt; Actualité (FR)" icon="rss" iconColor="grey" cols="4" layout="4-1">
+   <outline title="Numerama" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efd2bd5e-26ca-11e8-a39a-a0369fec958c&quot;,&quot;token&quot;:&quot;60fcabc3503d339f7d85ba96204272501a83b11f&quot;}]}&amp;format=atom" type="rss" row="1000" col="1"/>
+   <outline title="Numerama" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;6c3e2227-b22b-11e6-b093-782bcb11773e&quot;,&quot;token&quot;:&quot;115ac8a4eb1400a9a30456610203be11d68c3ce1&quot;}]}&amp;format=atom" type="rss" row="2000" col="1"/>
+   <outline type="SmartFilter" title="Today's articles from &quot;Tech &gt; Actualité (FR)&quot; tab" row="1000" col="2">
+    <outline title="Today's articles from &quot;Tech &gt; Actualité (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Tech &gt; Actualité (FR)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="Today's articles from &quot;Tech &gt; Actualité (FR)&quot; tab" row="2000" col="2">
+    <outline title="Today's articles from &quot;Tech &gt; Actualité (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Tech &gt; Actualité (FR)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="Actualité: Topic watch" row="3000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Actualité: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Actualité: Topic watch"/>
+   </outline>
+   <outline type="PotionWizard" title="Actualité: Topic watch" row="4000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Actualité: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Actualité: Topic watch"/>
+   </outline>
+   <outline type="Library" row="5000" col="2" title="Actualité" viewHeight="medium" libraryId="2316907899" libraryToken="f950b2ef534e8fa069cd8ea3e0f6cd4a3d705c78"/>
+   <outline type="Library" row="6000" col="2" title="Actualité" viewHeight="medium" libraryId="2316904855" libraryToken="f950b2ef534e8fa069cd8ea3e0f6cd4a3d705c78"/>
+   <outline title="Minimachines.net" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;765ce252-b22b-11e6-b093-782bcb11773e&quot;,&quot;token&quot;:&quot;45d8f0d5ef33b8a878f1eb98012f2e7773c93f63&quot;}]}&amp;format=atom" type="rss" row="1000" col="3"/>
+   <outline title="Minimachines.net" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efd9719e-26ca-11e8-bf22-a0369fec958c&quot;,&quot;token&quot;:&quot;85327a53d56d02fc23e20b6157572b38b8482773&quot;}]}&amp;format=atom" type="rss" row="2000" col="3"/>
+   <outline title="GNT - actualités" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efdea89e-26ca-11e8-a758-a0369fec958c&quot;,&quot;token&quot;:&quot;f3d448adf2cce0e80b6b76caa70fd55fca9cae60&quot;}]}&amp;format=atom" type="rss" row="3000" col="3"/>
+   <outline title="GNT - actualités" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;6c3e2224-b22b-11e6-b093-782bcb11773e&quot;,&quot;token&quot;:&quot;8077304aa07e665eda9f50a86aeda0f717e4c130&quot;}]}&amp;format=atom" type="rss" row="4000" col="3"/>
+   <outline title="BDM" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efd57e0e-26ca-11e8-817c-a0369fec958c&quot;,&quot;token&quot;:&quot;79ce607c2874515b29497f66b7b37ceb5599698e&quot;}]}&amp;format=atom" type="rss" row="1000" col="4"/>
+   <outline title="BDM" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;cc10dd90-57eb-11e6-a798-782bcb10e966&quot;,&quot;token&quot;:&quot;2e83da91be91bb137bcf2951a8767bce636a4656&quot;}]}&amp;format=atom" type="rss" row="2000" col="4"/>
+   <outline title="Maddyness – Le Magazine sur l’actualité des Startups Françaises" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;6b3c54cf-b22b-11e6-b093-782bcb11773e&quot;,&quot;token&quot;:&quot;cd2e1d958d15cbf99c36efa382436f9be10ac62f&quot;}]}&amp;format=atom" type="rss" row="3000" col="4"/>
+   <outline title="Maddyness – Le Magazine sur l’actualité des Startups Françaises" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efdc07c4-26ca-11e8-a55d-a0369fec958c&quot;,&quot;token&quot;:&quot;fa108b4980f782f7d9c69e36ad8755fa2fd3b70c&quot;}]}&amp;format=atom" type="rss" row="4000" col="4"/>
+   <outline title="La Quadrature du Net" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;891e7911-b22c-11e6-b093-782bcb11773e&quot;,&quot;token&quot;:&quot;2991052ae9880123318f61c019aa328d45445f1e&quot;}]}&amp;format=atom" type="rss" row="5000" col="4"/>
+   <outline title="La Quadrature du Net" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efe2e5ee-26ca-11e8-83b8-a0369fec958c&quot;,&quot;token&quot;:&quot;1845f9ac2f6f7cc4389dcda6948dfe294ea048dd&quot;}]}&amp;format=atom" type="rss" row="6000" col="4"/>
+  </outline>
+  <outline title="Sport &gt; Football (FR)" icon="rss" iconColor="grey" cols="4" layout="4-1">
+   <outline title="SO FOOT.com" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f06b7274-26ca-11e8-be79-a0369fec958c&quot;,&quot;token&quot;:&quot;e2dbcb88fad5f0c7b9e74b8318520ea397d1c3a3&quot;}]}&amp;format=atom" type="rss" row="1000" col="1"/>
+   <outline title="SO FOOT.com" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;050b3954-f43f-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;9cf4623394f4135554b9d98b1eef57dfab25d504&quot;}]}&amp;format=atom" type="rss" row="2000" col="1"/>
+   <outline type="SmartFilter" title="Today's articles from &quot;Sport &gt; Football (FR)&quot; tab" row="1000" col="2">
+    <outline title="Today's articles from &quot;Sport &gt; Football (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Sport &gt; Football (FR)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="Today's articles from &quot;Sport &gt; Football (FR)&quot; tab" row="2000" col="2">
+    <outline title="Today's articles from &quot;Sport &gt; Football (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Sport &gt; Football (FR)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="Football: Topic watch" row="3000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Football: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Football: Topic watch"/>
+   </outline>
+   <outline type="PotionWizard" title="Football: Topic watch" row="4000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Football: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Football: Topic watch"/>
+   </outline>
+   <outline type="Library" row="5000" col="2" title="Football" viewHeight="medium" libraryId="2313889639" libraryToken="44162941b903730994c45a786642b9f379f5c457"/>
+   <outline type="Library" row="6000" col="2" title="Football" viewHeight="medium" libraryId="2313889620" libraryToken="44162941b903730994c45a786642b9f379f5c457"/>
+   <outline title="Les Cahiers du Football - A la une" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;050b3956-f43f-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;acc66c3108b07678cad0f97fa16225d348d1dfcb&quot;}]}&amp;format=atom" type="rss" row="1000" col="3"/>
+   <outline title="Les Cahiers du Football - A la une" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f0758cc8-26ca-11e8-bc50-a0369fec958c&quot;,&quot;token&quot;:&quot;635fd949c9dd32a0691bee7c04841400f3bd2d81&quot;}]}&amp;format=atom" type="rss" row="2000" col="3"/>
+   <outline title="HorsJeu.net" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f086335c-26ca-11e8-b76f-a0369fec958c&quot;,&quot;token&quot;:&quot;8c66aaa830ab80e662d0867f966edf0571af32f6&quot;}]}&amp;format=atom" type="rss" row="3000" col="3"/>
+   <outline title="HorsJeu.net" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;050b3958-f43f-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;c61eb461d51ee083fb0dc850069f5d45f499f165&quot;}]}&amp;format=atom" type="rss" row="4000" col="3"/>
+   <outline title="ECOFOOT.FR" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f08ea5fa-26ca-11e8-a7cd-a0369fec958c&quot;,&quot;token&quot;:&quot;7df525fb131e032a2220209cc4a173728d74fbab&quot;}]}&amp;format=atom" type="rss" row="5000" col="3"/>
+   <outline title="ECOFOOT.FR" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;050b395a-f43f-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;ed6a20bd27acc086b30ae6b42397fddef2c1c870&quot;}]}&amp;format=atom" type="rss" row="6000" col="3"/>
+   <outline title="Foot Sur 7 : Site d'actualité foot et transferts" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f06f09ca-26ca-11e8-95e8-a0369fec958c&quot;,&quot;token&quot;:&quot;20346ac8dad1a36b3ac3288c0f806f94caedcf97&quot;}]}&amp;format=atom" type="rss" row="1000" col="4"/>
+   <outline title="Foot Sur 7 : Site d'actualité foot et transferts" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;050b3955-f43f-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;d58002b40a832a39c645610c9447a6da6f240919&quot;}]}&amp;format=atom" type="rss" row="2000" col="4"/>
+   <outline title="L'After Foot" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;050b3957-f43f-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;50bddbd2f8723734067f17e09c6b3a48a2fec2b9&quot;}]}&amp;format=atom" type="rss" row="3000" col="4"/>
+   <outline title="L'After Foot" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f083308a-26ca-11e8-9a3b-a0369fec958c&quot;,&quot;token&quot;:&quot;89717fa7a1660bae29f2467db9f522cb741e84f2&quot;}]}&amp;format=atom" type="rss" row="4000" col="4"/>
+   <outline title="Footpack" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f08a630a-26ca-11e8-ae44-a0369fec958c&quot;,&quot;token&quot;:&quot;6e2dec351aa94bd2c8fe36006efec81dd41b362b&quot;}]}&amp;format=atom" type="rss" row="5000" col="4"/>
+   <outline title="Footpack" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;050b3959-f43f-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;638d98df7e16dc7129ca6f04bcb2bf3b9231a7fb&quot;}]}&amp;format=atom" type="rss" row="6000" col="4"/>
+  </outline>
+  <outline title="Sport &gt; Sports US (FR)" icon="rss" iconColor="grey" cols="4" layout="4-1">
+   <outline title="Basket USA" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f0babad2-26ca-11e8-8e53-a0369fec958c&quot;,&quot;token&quot;:&quot;99f88ca45edd8732cec20be4f7ee2acac7ddb2da&quot;}]}&amp;format=atom" type="rss" row="1000" col="1"/>
+   <outline title="Basket USA" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;050b395b-f43f-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;091811f2165bf5a823f0562087a9226dee21487e&quot;}]}&amp;format=atom" type="rss" row="2000" col="1"/>
+   <outline type="SmartFilter" title="Today's articles from &quot;Sport &gt; Sports US (FR)&quot; tab" row="1000" col="2">
+    <outline title="Today's articles from &quot;Sport &gt; Sports US (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Sport &gt; Sports US (FR)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="Today's articles from &quot;Sport &gt; Sports US (FR)&quot; tab" row="2000" col="2">
+    <outline title="Today's articles from &quot;Sport &gt; Sports US (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Sport &gt; Sports US (FR)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="Sports US: Topic watch" row="3000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Sports US: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Sports US: Topic watch"/>
+   </outline>
+   <outline type="PotionWizard" title="Sports US: Topic watch" row="4000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Sports US: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Sports US: Topic watch"/>
+   </outline>
+   <outline type="Library" row="5000" col="2" title="Sports US" viewHeight="medium" libraryId="2313889623" libraryToken="2486897358b9640a2179555ccfd986135addf6d2"/>
+   <outline type="Library" row="6000" col="2" title="Sports US" viewHeight="medium" libraryId="2313889642" libraryToken="2486897358b9640a2179555ccfd986135addf6d2"/>
+   <outline title="Le fil de presse de RDS.ca - MLB" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;050b395d-f43f-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;59ef74fdbfcbd1bd050e163e4d60e5b09cbeedf5&quot;}]}&amp;format=atom" type="rss" row="1000" col="3"/>
+   <outline title="US RACING" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f0c01c5c-26ca-11e8-b9bf-a0369fec958c&quot;,&quot;token&quot;:&quot;0d8c0b73322e273abe2da044af2bb7b3964cc643&quot;}]}&amp;format=atom" type="rss" row="2000" col="3"/>
+   <outline title="Hockey Hebdo" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;050b395f-f43f-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;68f63ebd86410606fbc08bab727373a013ca45e7&quot;}]}&amp;format=atom" type="rss" row="3000" col="3"/>
+   <outline title="Hockey Hebdo" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f0c7ae22-26ca-11e8-921a-a0369fec958c&quot;,&quot;token&quot;:&quot;15d4f0294a216ce3e5e15c1cf28f6cb89a769dc9&quot;}]}&amp;format=atom" type="rss" row="4000" col="3"/>
+   <outline title="Sports US : Toute l'actualité sur Le Monde.fr." xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;050b395c-f43f-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;2ae11cefcd8166fe1ee5683c60aa9cf34ba46104&quot;}]}&amp;format=atom" type="rss" row="1000" col="4"/>
+   <outline title="Le fil de presse de RDS.ca - MLB" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f0bd4748-26ca-11e8-a3f1-a0369fec958c&quot;,&quot;token&quot;:&quot;985ca6d8861607a5354cb91fb1b59d00134c83e8&quot;}]}&amp;format=atom" type="rss" row="2000" col="4"/>
+   <outline title="Football - NFL" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;050b395e-f43f-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;adfac10d8fd8b21bf2d2da9251d1419283988b22&quot;}]}&amp;format=atom" type="rss" row="3000" col="4"/>
+   <outline title="Football - NFL" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f0c2c286-26ca-11e8-a5a6-a0369fec958c&quot;,&quot;token&quot;:&quot;549983dc05a5c67c7db438ae5582565311c01666&quot;}]}&amp;format=atom" type="rss" row="4000" col="4"/>
+  </outline>
+  <outline title="Art-Culture &gt; Musique (FR)" icon="rss" iconColor="grey" cols="4" layout="4-1">
+   <outline title="Les Inrocks - musique" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f1f978ca-26ca-11e8-bf21-a0369fec958c&quot;,&quot;token&quot;:&quot;75a2facb1fe44a6c4855125d6d26f0f613cc68e1&quot;}]}&amp;format=atom" type="rss" row="1000" col="1"/>
+   <outline title="Les Inrocks - musique" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;06deb838-be24-11e6-9009-842b2b5a33d6&quot;,&quot;token&quot;:&quot;d48c0c96e7d8460301bf650d1876b577d6bf969c&quot;}]}&amp;format=atom" type="rss" row="2000" col="1"/>
+   <outline type="SmartFilter" title="Today's articles from &quot;Art-Culture &gt; Musique (FR)&quot; tab" row="1000" col="2">
+    <outline title="Today's articles from &quot;Art-Culture &gt; Musique (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Art-Culture &gt; Musique (FR)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="Today's articles from &quot;Art-Culture &gt; Musique (FR)&quot; tab" row="2000" col="2">
+    <outline title="Today's articles from &quot;Art-Culture &gt; Musique (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Art-Culture &gt; Musique (FR)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="Musique: Topic watch" row="3000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Musique: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Musique: Topic watch"/>
+   </outline>
+   <outline type="PotionWizard" title="Musique: Topic watch" row="4000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Musique: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Musique: Topic watch"/>
+   </outline>
+   <outline type="Library" row="5000" col="2" title="Musique" viewHeight="medium" libraryId="2316957735" libraryToken="07f585f71344bdf43038c70843cb328a93fd5d0c"/>
+   <outline type="Library" row="6000" col="2" title="Musique" viewHeight="medium" libraryId="2316957692" libraryToken="07f585f71344bdf43038c70843cb328a93fd5d0c"/>
+   <outline title="rss" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;06deb843-be24-11e6-9009-842b2b5a33d6&quot;,&quot;token&quot;:&quot;6ed0c349fa1d81ee259ffe057eb331100d4b74d8&quot;}]}&amp;format=atom" type="rss" row="1000" col="3"/>
+   <outline title="rss" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f1fe7320-26ca-11e8-973c-a0369fec958c&quot;,&quot;token&quot;:&quot;44b9cee40c729dbe38073edf06251a6923ed880d&quot;}]}&amp;format=atom" type="rss" row="2000" col="3"/>
+   <outline title="nova" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f2058caa-26ca-11e8-9a6d-a0369fec958c&quot;,&quot;token&quot;:&quot;e27ab3bf1ef40eaf713ee00ca86a2412b0607871&quot;}]}&amp;format=atom" type="rss" row="3000" col="3"/>
+   <outline title="NOVAPLANET" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;06deb847-be24-11e6-9009-842b2b5a33d6&quot;,&quot;token&quot;:&quot;d3803a9785b91bb94da78778a51213a87f61002f&quot;}]}&amp;format=atom" type="rss" row="4000" col="3"/>
+   <outline title="New Noise Magazine" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f20a6fa4-26ca-11e8-9097-a0369fec958c&quot;,&quot;token&quot;:&quot;e94a8886fcbd3d270076cc60f4165bd2d54ab81a&quot;}]}&amp;format=atom" type="rss" row="5000" col="3"/>
+   <outline title="Le Mellotron" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;07d56db1-be24-11e6-9009-842b2b5a33d6&quot;,&quot;token&quot;:&quot;0fa7c93939216d41d12f2ff8fe79c154e5dd737c&quot;}]}&amp;format=atom" type="rss" row="6000" col="3"/>
+   <outline title="Sound Of Britain" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f1fbeefc-26ca-11e8-8176-a0369fec958c&quot;,&quot;token&quot;:&quot;57cf6595a0ae2ce2f78d24edd72cfcb36cffbc98&quot;}]}&amp;format=atom" type="rss" row="1000" col="4"/>
+   <outline title="Sound Of Britain" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;07d56da2-be24-11e6-9009-842b2b5a33d6&quot;,&quot;token&quot;:&quot;9d16c6f222dcaccb689f918892ed2e25fe240bb0&quot;}]}&amp;format=atom" type="rss" row="2000" col="4"/>
+   <outline title="RADIO METAL" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;07d56da0-be24-11e6-9009-842b2b5a33d6&quot;,&quot;token&quot;:&quot;a00f5bbb7c03f6df4b39fba1395e67ae512690fc&quot;}]}&amp;format=atom" type="rss" row="3000" col="4"/>
+   <outline title="RADIO METAL" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f203659c-26ca-11e8-90e0-a0369fec958c&quot;,&quot;token&quot;:&quot;989fe7b92c36ff9743b63b51903349def2575a92&quot;}]}&amp;format=atom" type="rss" row="4000" col="4"/>
+   <outline title="Le Mellotron" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f207f3c8-26ca-11e8-9a33-a0369fec958c&quot;,&quot;token&quot;:&quot;ba152624bd92efeb1149b4543ee2982a78fe7cd4&quot;}]}&amp;format=atom" type="rss" row="5000" col="4"/>
+   <outline title="Tsugi" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;06deb83a-be24-11e6-9009-842b2b5a33d6&quot;,&quot;token&quot;:&quot;07a85ddd5d3726d060a8f1396dd71d07864c49db&quot;}]}&amp;format=atom" type="rss" row="6000" col="4"/>
+  </outline>
+  <outline title="Art-Culture &gt; TV - Séries (FR)" icon="rss" iconColor="grey" cols="4" layout="4-1">
+   <outline title="melty - Séries" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f1e32714-26ca-11e8-a43a-a0369fec958c&quot;,&quot;token&quot;:&quot;ffde3f1a308f09750a7781fc25b238b1f4823778&quot;}]}&amp;format=atom" type="rss" row="1000" col="1"/>
+   <outline title="melty - Séries" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;2a37d229-f437-11e6-ad96-782bcb10ee8c&quot;,&quot;token&quot;:&quot;ec7fad6ad1c07a643421e6a95c4b7e395dd53cfa&quot;}]}&amp;format=atom" type="rss" row="2000" col="1"/>
+   <outline type="SmartFilter" title="Today's articles from &quot;Art-Culture &gt; TV - Séries (FR)&quot; tab" row="1000" col="2">
+    <outline title="Today's articles from &quot;Art-Culture &gt; TV - Séries (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Art-Culture &gt; TV - Séries (FR)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="Today's articles from &quot;Art-Culture &gt; TV - Séries (FR)&quot; tab" row="2000" col="2">
+    <outline title="Today's articles from &quot;Art-Culture &gt; TV - Séries (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Art-Culture &gt; TV - Séries (FR)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="TV - Séries: Topic watch" row="3000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;TV - Séries: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="TV - Séries: Topic watch"/>
+   </outline>
+   <outline type="PotionWizard" title="TV - Séries: Topic watch" row="4000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;TV - Séries: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="TV - Séries: Topic watch"/>
+   </outline>
+   <outline type="Library" row="5000" col="2" title="TV - Séries" viewHeight="medium" libraryId="2317056237" libraryToken="81940a479103f53202c6c545cf3c61d7826c9910"/>
+   <outline type="Library" row="6000" col="2" title="TV - Séries" viewHeight="medium" libraryId="2317056207" libraryToken="81940a479103f53202c6c545cf3c61d7826c9910"/>
+   <outline title="Chroniques En Série" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;2a37d22b-f437-11e6-ad96-782bcb10ee8c&quot;,&quot;token&quot;:&quot;02a0ebed97b5fa06e8c9b177ace1e94bbb8ac242&quot;}]}&amp;format=atom" type="rss" row="1000" col="3"/>
+   <outline title="Flux d'actualités Séries TV de Premiere.fr" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f1e950b2-26ca-11e8-aa93-a0369fec958c&quot;,&quot;token&quot;:&quot;134774957b4ff32d090e47da4ea67bf8e25045c4&quot;}]}&amp;format=atom" type="rss" row="2000" col="3"/>
+   <outline title="Critictoo (Séries)" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f1f0c1c6-26ca-11e8-8542-a0369fec958c&quot;,&quot;token&quot;:&quot;f696279bfa1be8d51b27cd8de1051db62fc7e964&quot;}]}&amp;format=atom" type="rss" row="3000" col="3"/>
+   <outline title="Critictoo (Séries)" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;2a37d22d-f437-11e6-ad96-782bcb10ee8c&quot;,&quot;token&quot;:&quot;7f9eed506cca36bf23c67853bbad0df468752b5a&quot;}]}&amp;format=atom" type="rss" row="4000" col="3"/>
+   <outline title="Spin-off.fr : Toute l'actualité et critiques des épisodes de vos séries TV préférées" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f1f653e8-26ca-11e8-80bf-a0369fec958c&quot;,&quot;token&quot;:&quot;f8d0cda393b9f49a13ef11a40c384ea802d09978&quot;}]}&amp;format=atom" type="rss" row="5000" col="3"/>
+   <outline title="Spin-off.fr : Toute l'actualité et critiques des épisodes de vos séries TV préférées" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;2a37d22f-f437-11e6-ad96-782bcb10ee8c&quot;,&quot;token&quot;:&quot;85c68a534f5a7d0458d1e53ea3f20b9cf97b997d&quot;}]}&amp;format=atom" type="rss" row="6000" col="3"/>
+   <outline title="News de seriesaddict" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f1e59d64-26ca-11e8-9871-a0369fec958c&quot;,&quot;token&quot;:&quot;f758803c489fe0ce36a9686e3d0e1cc523b6e51a&quot;}]}&amp;format=atom" type="rss" row="1000" col="4"/>
+   <outline title="News de seriesaddict" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;2a37d22a-f437-11e6-ad96-782bcb10ee8c&quot;,&quot;token&quot;:&quot;30725bb3237467368839cf3bcebba8fd5dc92a41&quot;}]}&amp;format=atom" type="rss" row="2000" col="4"/>
+   <outline title="Flux d'actualités Séries TV de Premiere.fr" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;2a37d22c-f437-11e6-ad96-782bcb10ee8c&quot;,&quot;token&quot;:&quot;4946da344e6ac5f90e488830f0130781755b32dc&quot;}]}&amp;format=atom" type="rss" row="3000" col="4"/>
+   <outline title="Le Monde Des Séries" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f1ed2192-26ca-11e8-86be-a0369fec958c&quot;,&quot;token&quot;:&quot;851441e8e4c16586c63e96791273ef7a3e457121&quot;}]}&amp;format=atom" type="rss" row="4000" col="4"/>
+   <outline title="seriesTVnews" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f1f36e62-26ca-11e8-bec9-a0369fec958c&quot;,&quot;token&quot;:&quot;f28948fca5afb460d8efb74228b448db136886fc&quot;}]}&amp;format=atom" type="rss" row="5000" col="4"/>
+   <outline title="seriesTVnews" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;2a37d22e-f437-11e6-ad96-782bcb10ee8c&quot;,&quot;token&quot;:&quot;53964cbc06f79b25b4d15e5a8d1d4dc60ea938a8&quot;}]}&amp;format=atom" type="rss" row="6000" col="4"/>
+  </outline>
+  <outline title="Interest: &quot;Renault&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Renault&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Renault&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Renault&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Renault&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Renault\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Renault&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Renault&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Renault AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Renault&quot; images" row="1000" col="4">
+    <outline title="&quot;Renault&quot; images" searchQuery="{&quot;topic&quot;:&quot;Renault AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;News&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;News&quot; articles" row="2000" col="1">
+    <outline title="All &quot;News&quot; articles" searchQuery="{&quot;topic&quot;:&quot;News&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;News&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;News\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;News&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;News&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;News AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;News&quot; images" row="1000" col="4">
+    <outline title="&quot;News&quot; images" searchQuery="{&quot;topic&quot;:&quot;News AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Serie A&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Serie A&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Serie A&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Serie A&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Serie A&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Serie A\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Serie A&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Serie A&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Serie A AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Serie A&quot; images" row="1000" col="4">
+    <outline title="&quot;Serie A&quot; images" searchQuery="{&quot;topic&quot;:&quot;Serie A AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Dani Alves&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Dani Alves&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Dani Alves&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Dani Alves&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Dani Alves&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Dani Alves\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Dani Alves&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Dani Alves&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Dani Alves AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Dani Alves&quot; images" row="1000" col="4">
+    <outline title="&quot;Dani Alves&quot; images" searchQuery="{&quot;topic&quot;:&quot;Dani Alves AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Samsung&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Samsung&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Samsung&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Samsung&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Samsung&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Samsung\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Samsung&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Samsung&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Samsung AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Samsung&quot; images" row="1000" col="4">
+    <outline title="&quot;Samsung&quot; images" searchQuery="{&quot;topic&quot;:&quot;Samsung AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Apple&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Apple&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Apple&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Apple&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Apple&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Apple\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Apple&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Apple&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Apple AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Apple&quot; images" row="1000" col="4">
+    <outline title="&quot;Apple&quot; images" searchQuery="{&quot;topic&quot;:&quot;Apple AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Neymar&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Neymar&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Neymar&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Neymar&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Neymar&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Neymar\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Neymar&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Neymar&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Neymar AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Neymar&quot; images" row="1000" col="4">
+    <outline title="&quot;Neymar&quot; images" searchQuery="{&quot;topic&quot;:&quot;Neymar AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Ligue Des Champions&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Ligue Des Champions&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Ligue Des Champions&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Ligue Des Champions&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Ligue Des Champions&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Ligue Des Champions\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Ligue Des Champions&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Ligue Des Champions&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Ligue Des Champions AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Ligue Des Champions&quot; images" row="1000" col="4">
+    <outline title="&quot;Ligue Des Champions&quot; images" searchQuery="{&quot;topic&quot;:&quot;Ligue Des Champions AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Ligue 1&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Ligue 1&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Ligue 1&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Ligue 1&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Ligue 1&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Ligue 1\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Ligue 1&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Ligue 1&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Ligue 1 AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Ligue 1&quot; images" row="1000" col="4">
+    <outline title="&quot;Ligue 1&quot; images" searchQuery="{&quot;topic&quot;:&quot;Ligue 1 AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Coupe Du Monde&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Coupe Du Monde&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Coupe Du Monde&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Coupe Du Monde&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Coupe Du Monde&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Coupe Du Monde\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Coupe Du Monde&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Coupe Du Monde&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Coupe Du Monde AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Coupe Du Monde&quot; images" row="1000" col="4">
+    <outline title="&quot;Coupe Du Monde&quot; images" searchQuery="{&quot;topic&quot;:&quot;Coupe Du Monde AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;E3 2019&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;E3 2019&quot; articles" row="2000" col="1">
+    <outline title="All &quot;E3 2019&quot; articles" searchQuery="{&quot;topic&quot;:&quot;E3 2019&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;E3 2019&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;E3 2019\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;E3 2019&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;E3 2019&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;E3 2019 AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;E3 2019&quot; images" row="1000" col="4">
+    <outline title="&quot;E3 2019&quot; images" searchQuery="{&quot;topic&quot;:&quot;E3 2019 AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Microsoft&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Microsoft&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Microsoft&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Microsoft&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Microsoft&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Microsoft\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Microsoft&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Microsoft&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Microsoft AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Microsoft&quot; images" row="1000" col="4">
+    <outline title="&quot;Microsoft&quot; images" searchQuery="{&quot;topic&quot;:&quot;Microsoft AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+ </body>
+</opml>
