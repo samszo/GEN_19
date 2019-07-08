@@ -17,3 +17,5 @@ Javascript
 Ruby
 
 <h3>Newsletter</h3>
+
+<a href="https://www.30millionsdamis.fr/uploads/pics/conseils-erreurs-chat-1171.jpg">Lien de photo de chat</a>
