@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+ <head>
+  <title>Personal Dashboard</title>
+  <type>Premium</type>
+  <creationDate>2019-07-08 12:07:11</creationDate>
+ </head>
+ <body>
+  <outline title="Bienvenue" icon="home" iconColor="blue" cols="4" layout="4-1">
+   <outline type="WelcomeVip" title="Welcome to your Dashboard" row="1000" col="1">
+    <outline color="borderless" mode="welcome"/>
+   </outline>
+   <outline type="PotionWizard" title="Alert me if it'll rain tomorrow" row="4000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Alert me if it'll rain tomorrow&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.weather&quot;,&quot;reference&quot;:&quot;weather_forecast&quot;,&quot;name&quot;:&quot;com.weather.city.{city}.forecast.{day}&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;weatherConditions&quot;:&quot;Rain&quot;},&quot;formula&quot;:&quot;bluntConditions is 'Rain'&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Alert me if it'll rain tomorrow"/>
+   </outline>
+   <outline type="Weather" title="Paris, France" row="1000" col="3">
+    <outline unit="1" town="48.857/2.352"/>
+   </outline>
+   <outline type="TodoList" title="To Do List" row="1000" col="4">
+    <outline todos="{&quot;t1&quot;:{&quot;title&quot;:&quot;Organize your life!&quot;,&quot;color&quot;:&quot;#078d93&quot;,&quot;id&quot;:&quot;t1&quot;},&quot;t2&quot;:{&quot;title&quot;:&quot;Write Things Down&quot;,&quot;color&quot;:&quot;#96BC0D&quot;,&quot;id&quot;:&quot;t2&quot;},&quot;t3&quot;:{&quot;title&quot;:&quot;Make Schedules and Deadlines&quot;,&quot;color&quot;:&quot;#96BC0D&quot;,&quot;id&quot;:&quot;t3&quot;}}"/>
+   </outline>
+  </outline>
+  <outline title="Lifestyle &gt; Santé &amp; Bien-être (FR)" icon="rss" iconColor="grey" cols="4" layout="4-1">
+   <outline title="InternetActu.net" xmlUrl="http://feeds.feedburner.com/internetactu/bcmJ" htmlUrl="http://www.internetactu.net/" type="rss" row="500" col="1"/>
+   <outline title="Bioaddict - Les derniers articles" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;eecee220-26ca-11e8-9e38-a0369fec958c&quot;,&quot;token&quot;:&quot;4b99ecfbe66d201f043c9dbc0ac559d51786482b&quot;}]}&amp;format=atom" type="rss" row="1000" col="1"/>
+   <outline title="Bioaddict - Les derniers articles" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;90ad0a67-b2fa-11e6-acd1-782bcb10e966&quot;,&quot;token&quot;:&quot;e021a1fd5da1aac7e2dd746b6989f8ff9251169c&quot;}]}&amp;format=atom" type="rss" row="2000" col="1"/>
+   <outline type="SmartFilter" title="Today's articles from &quot;Lifestyle &amp;gt; Santé &amp; Bien-être (FR)&quot; tab" row="1000" col="2">
+    <outline title="Today's articles from &quot;Lifestyle &gt; Santé &amp; Bien-être (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Lifestyle &gt; Santé &amp; Bien-être (FR)&quot;]}}" searchToken="" view="list" viewHeight="medium" color="" date_from="-2days" date_to="now" range="daily"/>
+   </outline>
+   <outline type="SmartFilter" title="Today's articles from &quot;Lifestyle &amp;gt; Santé &amp; Bien-être (FR)&quot; tab" row="2000" col="2">
+    <outline title="Today's articles from &quot;Lifestyle &gt; Santé &amp; Bien-être (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Lifestyle &gt; Santé &amp; Bien-être (FR)&quot;]}}" searchToken="" view="list" viewHeight="medium" color="" date_from="-2days" date_to="now" range="daily"/>
+   </outline>
+   <outline type="PotionWizard" title="Santé &amp; Bien-être: Topic watch" row="3000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Santé &amp; Bien-être: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Santé &amp; Bien-être: Topic watch"/>
+   </outline>
+   <outline type="PotionWizard" title="Santé &amp; Bien-être: Topic watch" row="4000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Santé &amp; Bien-être: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Santé &amp; Bien-être: Topic watch"/>
+   </outline>
+   <outline type="Library" row="5000" col="2" title="Santé &amp; Bien-être" viewHeight="medium" libraryId="2316903861" libraryToken="81f750773d27e3aaf71b0066fc1cf30247b7fea3"/>
+   <outline type="Library" row="6000" col="2" title="Santé &amp; Bien-être" viewHeight="medium" libraryId="2316863667" libraryToken="81f750773d27e3aaf71b0066fc1cf30247b7fea3"/>
+   <outline title="Les Petites Choses de Fanny – Blog beauté bio &amp;amp; naturelle" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;eeee7e50-26ca-11e8-809f-a0369fec958c&quot;,&quot;token&quot;:&quot;af590c1bf47d315259238eca295c5bc1bc3c7b7b&quot;}]}&amp;format=atom" type="rss" row="1000" col="3"/>
+   <outline title="Fitnext" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;9002f01e-b2fa-11e6-acd1-782bcb10e966&quot;,&quot;token&quot;:&quot;3c158cfd6d6372c08fcbcd67d2b6d8f35e96eb6b&quot;}]}&amp;format=atom" type="rss" row="2000" col="3"/>
+   <outline title="feed:&quot;https:&amp;#x2F;&amp;#x2F;vivrehealthy.com&amp;#x2F;feed&amp;#x2F;&quot;" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;90ad0a64-b2fa-11e6-acd1-782bcb10e966&quot;,&quot;token&quot;:&quot;9b5f6f8efaf325c846051226599d4b8b28638ba1&quot;}]}&amp;format=atom" type="rss" row="3000" col="3"/>
+   <outline title="Mange Tes Légumes" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;ef013bee-26ca-11e8-8a18-a0369fec958c&quot;,&quot;token&quot;:&quot;ec68f87894a40b3dde622eb76eed5b36e8de43a4&quot;}]}&amp;format=atom" type="rss" row="4000" col="3"/>
+   <outline title="Mange Tes Légumes" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;90ad0a7a-b2fa-11e6-acd1-782bcb10e966&quot;,&quot;token&quot;:&quot;8b08bbf41b3788b1ff8891b35802103dc460501e&quot;}]}&amp;format=atom" type="rss" row="5000" col="3"/>
+   <outline title="Lucile Woodward" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;eed4c320-26ca-11e8-8699-a0369fec958c&quot;,&quot;token&quot;:&quot;234c200022455117ae7c4c202ad35714b3ea4d7e&quot;}]}&amp;format=atom" type="rss" row="1000" col="4"/>
+   <outline title="Les Petites Choses de Fanny – Blog beauté bio &amp;amp; naturelle" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;90ad0a75-b2fa-11e6-acd1-782bcb10e966&quot;,&quot;token&quot;:&quot;89da72f634dec6207eddff6d17da5d629d03af73&quot;}]}&amp;format=atom" type="rss" row="2000" col="4"/>
+   <outline title="Lucile Woodward" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;90ad0a69-b2fa-11e6-acd1-782bcb10e966&quot;,&quot;token&quot;:&quot;ce543d7b6f9fb50a24b389002f9d55f798350e22&quot;}]}&amp;format=atom" type="rss" row="3000" col="4"/>
+   <outline title="feed:&quot;https:&amp;#x2F;&amp;#x2F;vivrehealthy.com&amp;#x2F;feed&amp;#x2F;&quot;" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;eef2b8ee-26ca-11e8-80ac-a0369fec958c&quot;,&quot;token&quot;:&quot;ee87af86c3ed96b3a9db3318da46bd6a9f3202f4&quot;}]}&amp;format=atom" type="rss" row="4000" col="4"/>
+   <outline title="Quoi de neuf sur la nutrition.fr" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;9002f01c-b2fa-11e6-acd1-782bcb10e966&quot;,&quot;token&quot;:&quot;35fdaf4ba1cc055fe2f8090bb81a6634bf080e5a&quot;}]}&amp;format=atom" type="rss" row="5000" col="4"/>
+  </outline>
+  <outline title="Interest: &quot;Groupe Hospitalier Intercommunal De Vil" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Groupe Hospitalier Intercommunal De Villeneuve-Saint-Georges&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Groupe Hospitalier Intercommunal De Villeneuve-Saint-Georges&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Groupe Hospitalier Intercommunal De Villeneuve-Saint-Georges&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Groupe Hospitalier Intercommunal De Villeneuve-Saint-Georges&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Groupe Hospitalier Intercommunal De Villeneuve-Saint-Georges\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Groupe Hospitalier Intercommunal De Villeneuve-Saint-Georges&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Groupe Hospitalier Intercommunal De Villeneuve-Saint-Georges&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Groupe Hospitalier Intercommunal De Villeneuve-Saint-Georges AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Groupe Hospitalier Intercommunal De Villeneuve-Saint-Georges&quot; images" row="1000" col="4">
+    <outline title="&quot;Groupe Hospitalier Intercommunal De Villeneuve-Saint-Georges&quot; images" searchQuery="{&quot;topic&quot;:&quot;Groupe Hospitalier Intercommunal De Villeneuve-Saint-Georges AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Enfants&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Enfants&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Enfants&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Enfants&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Enfants&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Enfants\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Enfants&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Enfants&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Enfants AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Enfants&quot; images" row="1000" col="4">
+    <outline title="&quot;Enfants&quot; images" searchQuery="{&quot;topic&quot;:&quot;Enfants AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Catherine Watine&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Catherine Watine&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Catherine Watine&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Catherine Watine&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Catherine Watine&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Catherine Watine\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Catherine Watine&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Catherine Watine&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Catherine Watine AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Catherine Watine&quot; images" row="1000" col="4">
+    <outline title="&quot;Catherine Watine&quot; images" searchQuery="{&quot;topic&quot;:&quot;Catherine Watine AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+ </body>
+</opml>
