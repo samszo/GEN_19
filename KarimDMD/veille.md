@@ -13,7 +13,7 @@ et ce dans le but d'être le meilleur de son domaine
 Google Alerts est un service qui envoie un e-mail lorsqu'une nouvelle page web correspondant aux mots-clés que l'on achoisi, apparaît dans
 les résultats Google
 
-### __Quora__
+### Quora
 
 Quora est un site qui permet à ses utilisateurs de créer, d'éditer et d'organiser des questions-réponses
 
