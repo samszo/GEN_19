@@ -19,7 +19,23 @@ devellopement web pour recuperer les dernieres nouvelle sur le devellopement web
 
 # newsletter #
 
-## https://www.journaldunet.com  et ##
+## https://www.journaldunet.com  et https://www.lesnumeriques.com ##
+
+je me suis abonné a ces 2 newsletters afin de me tenir au courant des nouvelles sur les avancée informatique
+
+# flux RSS #
+
+## http://www.internetactu.net ##
+
+j'ai recuperer les flux rss du site afin d'en extraitre les information importante 
+
+# diigo #
+
+https://www.diigo.com/user/afiagen-11?query=%23informatique la bibliotheque des liens interessant sur l'informatique
+
+
+
+
 
 
 
