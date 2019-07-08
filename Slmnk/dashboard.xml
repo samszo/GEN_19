@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+ <head>
+  <title>Personal Dashboard</title>
+  <type>Premium</type>
+  <creationDate>2019-07-08 12:00:23</creationDate>
+ </head>
+ <body>
+  <outline title="Welcome" icon="home" iconColor="blue" cols="4" layout="4-1">
+   <outline type="WelcomeVip" title="Welcome to your Dashboard" row="1000" col="1">
+    <outline color="borderless" mode="welcome"/>
+   </outline>
+   <outline type="PotionWizard" title="Alert me if it'll rain tomorrow" row="4000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Alert me if it'll rain tomorrow&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.weather&quot;,&quot;reference&quot;:&quot;weather_forecast&quot;,&quot;name&quot;:&quot;com.weather.city.{city}.forecast.{day}&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;weatherConditions&quot;:&quot;Rain&quot;},&quot;formula&quot;:&quot;bluntConditions is 'Rain'&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Alert me if it'll rain tomorrow"/>
+   </outline>
+   <outline type="Weather" title="Paris, France" row="1000" col="3">
+    <outline unit="1" town="48.86/2.35"/>
+   </outline>
+   <outline type="TodoList" title="To Do List" row="1000" col="4">
+    <outline todos="{&quot;t1&quot;:{&quot;title&quot;:&quot;Organize your life!&quot;,&quot;color&quot;:&quot;#078d93&quot;,&quot;id&quot;:&quot;t1&quot;},&quot;t2&quot;:{&quot;title&quot;:&quot;Write Things Down&quot;,&quot;color&quot;:&quot;#96BC0D&quot;,&quot;id&quot;:&quot;t2&quot;},&quot;t3&quot;:{&quot;title&quot;:&quot;Make Schedules and Deadlines&quot;,&quot;color&quot;:&quot;#96BC0D&quot;,&quot;id&quot;:&quot;t3&quot;}}"/>
+   </outline>
+  </outline>
+  <outline title="Tech &gt; Actualité (FR)" icon="rss" iconColor="grey" cols="4" layout="4-1">
+   <outline title="Numerama" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efd2bd5e-26ca-11e8-a39a-a0369fec958c&quot;,&quot;token&quot;:&quot;60fcabc3503d339f7d85ba96204272501a83b11f&quot;}]}&amp;format=atom" type="rss" row="1000" col="1"/>
+   <outline title="Numerama" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;6c3e2227-b22b-11e6-b093-782bcb11773e&quot;,&quot;token&quot;:&quot;115ac8a4eb1400a9a30456610203be11d68c3ce1&quot;}]}&amp;format=atom" type="rss" row="2000" col="1"/>
+   <outline type="SmartFilter" title="Today's articles from &quot;Tech &gt; Actualité (FR)&quot; tab" row="1000" col="2">
+    <outline title="Today's articles from &quot;Tech &gt; Actualité (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Tech &gt; Actualité (FR)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="Today's articles from &quot;Tech &gt; Actualité (FR)&quot; tab" row="2000" col="2">
+    <outline title="Today's articles from &quot;Tech &gt; Actualité (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Tech &gt; Actualité (FR)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="Actualité: Topic watch" row="3000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Actualité: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Actualité: Topic watch"/>
+   </outline>
+   <outline type="PotionWizard" title="Actualité: Topic watch" row="4000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Actualité: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Actualité: Topic watch"/>
+   </outline>
+   <outline type="Library" row="5000" col="2" title="Actualité" viewHeight="medium" libraryId="2316907899" libraryToken="f950b2ef534e8fa069cd8ea3e0f6cd4a3d705c78"/>
+   <outline type="Library" row="6000" col="2" title="Actualité" viewHeight="medium" libraryId="2316904855" libraryToken="f950b2ef534e8fa069cd8ea3e0f6cd4a3d705c78"/>
+   <outline title="Minimachines.net" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;765ce252-b22b-11e6-b093-782bcb11773e&quot;,&quot;token&quot;:&quot;45d8f0d5ef33b8a878f1eb98012f2e7773c93f63&quot;}]}&amp;format=atom" type="rss" row="1000" col="3"/>
+   <outline title="Minimachines.net" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efd9719e-26ca-11e8-bf22-a0369fec958c&quot;,&quot;token&quot;:&quot;85327a53d56d02fc23e20b6157572b38b8482773&quot;}]}&amp;format=atom" type="rss" row="2000" col="3"/>
+   <outline title="GNT - actualités" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efdea89e-26ca-11e8-a758-a0369fec958c&quot;,&quot;token&quot;:&quot;f3d448adf2cce0e80b6b76caa70fd55fca9cae60&quot;}]}&amp;format=atom" type="rss" row="3000" col="3"/>
+   <outline title="GNT - actualités" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;6c3e2224-b22b-11e6-b093-782bcb11773e&quot;,&quot;token&quot;:&quot;8077304aa07e665eda9f50a86aeda0f717e4c130&quot;}]}&amp;format=atom" type="rss" row="4000" col="3"/>
+   <outline title="BDM" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efd57e0e-26ca-11e8-817c-a0369fec958c&quot;,&quot;token&quot;:&quot;79ce607c2874515b29497f66b7b37ceb5599698e&quot;}]}&amp;format=atom" type="rss" row="1000" col="4"/>
+   <outline title="BDM" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;cc10dd90-57eb-11e6-a798-782bcb10e966&quot;,&quot;token&quot;:&quot;2e83da91be91bb137bcf2951a8767bce636a4656&quot;}]}&amp;format=atom" type="rss" row="2000" col="4"/>
+   <outline title="Maddyness – Le Magazine sur l’actualité des Startups Françaises" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;6b3c54cf-b22b-11e6-b093-782bcb11773e&quot;,&quot;token&quot;:&quot;cd2e1d958d15cbf99c36efa382436f9be10ac62f&quot;}]}&amp;format=atom" type="rss" row="3000" col="4"/>
+   <outline title="Maddyness – Le Magazine sur l’actualité des Startups Françaises" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efdc07c4-26ca-11e8-a55d-a0369fec958c&quot;,&quot;token&quot;:&quot;fa108b4980f782f7d9c69e36ad8755fa2fd3b70c&quot;}]}&amp;format=atom" type="rss" row="4000" col="4"/>
+   <outline title="La Quadrature du Net" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;891e7911-b22c-11e6-b093-782bcb11773e&quot;,&quot;token&quot;:&quot;2991052ae9880123318f61c019aa328d45445f1e&quot;}]}&amp;format=atom" type="rss" row="5000" col="4"/>
+   <outline title="La Quadrature du Net" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efe2e5ee-26ca-11e8-83b8-a0369fec958c&quot;,&quot;token&quot;:&quot;1845f9ac2f6f7cc4389dcda6948dfe294ea048dd&quot;}]}&amp;format=atom" type="rss" row="6000" col="4"/>
+  </outline>
+  <outline title="Interest: &quot;AFP&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;AFP&quot; articles" row="2000" col="1">
+    <outline title="All &quot;AFP&quot; articles" searchQuery="{&quot;topic&quot;:&quot;AFP&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;AFP&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;AFP\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;AFP&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;AFP&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;AFP AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;AFP&quot; images" row="1000" col="4">
+    <outline title="&quot;AFP&quot; images" searchQuery="{&quot;topic&quot;:&quot;AFP AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Bons Plans&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Bons Plans&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Bons Plans&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Bons Plans&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Bons Plans&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Bons Plans\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Bons Plans&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Bons Plans&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Bons Plans AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Bons Plans&quot; images" row="1000" col="4">
+    <outline title="&quot;Bons Plans&quot; images" searchQuery="{&quot;topic&quot;:&quot;Bons Plans AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Coupe Du Monde&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Coupe Du Monde&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Coupe Du Monde&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Coupe Du Monde&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Coupe Du Monde&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Coupe Du Monde\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Coupe Du Monde&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Coupe Du Monde&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Coupe Du Monde AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Coupe Du Monde&quot; images" row="1000" col="4">
+    <outline title="&quot;Coupe Du Monde&quot; images" searchQuery="{&quot;topic&quot;:&quot;Coupe Du Monde AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Mike Pompeo&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Mike Pompeo&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Mike Pompeo&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Mike Pompeo&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Mike Pompeo&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Mike Pompeo\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Mike Pompeo&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Mike Pompeo&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Mike Pompeo AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Mike Pompeo&quot; images" row="1000" col="4">
+    <outline title="&quot;Mike Pompeo&quot; images" searchQuery="{&quot;topic&quot;:&quot;Mike Pompeo AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Actualité&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Actualité&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Actualité&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Actualité&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Actualité&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Actualité\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Actualité&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Actualité&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Actualité AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Actualité&quot; images" row="1000" col="4">
+    <outline title="&quot;Actualité&quot; images" searchQuery="{&quot;topic&quot;:&quot;Actualité AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Google&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Google&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Google&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Google&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Google&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Google\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Google&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Google&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Google AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Google&quot; images" row="1000" col="4">
+    <outline title="&quot;Google&quot; images" searchQuery="{&quot;topic&quot;:&quot;Google AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Microsoft&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Microsoft&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Microsoft&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Microsoft&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Microsoft&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Microsoft\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Microsoft&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Microsoft&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Microsoft AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Microsoft&quot; images" row="1000" col="4">
+    <outline title="&quot;Microsoft&quot; images" searchQuery="{&quot;topic&quot;:&quot;Microsoft AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Samsung&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Samsung&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Samsung&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Samsung&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Samsung&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Samsung\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Samsung&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Samsung&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Samsung AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Samsung&quot; images" row="1000" col="4">
+    <outline title="&quot;Samsung&quot; images" searchQuery="{&quot;topic&quot;:&quot;Samsung AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Fnac&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Fnac&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Fnac&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Fnac&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Fnac&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Fnac\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Fnac&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Fnac&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Fnac AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Fnac&quot; images" row="1000" col="4">
+    <outline title="&quot;Fnac&quot; images" searchQuery="{&quot;topic&quot;:&quot;Fnac AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;E3 2019&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;E3 2019&quot; articles" row="2000" col="1">
+    <outline title="All &quot;E3 2019&quot; articles" searchQuery="{&quot;topic&quot;:&quot;E3 2019&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;E3 2019&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;E3 2019\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;E3 2019&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;E3 2019&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;E3 2019 AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;E3 2019&quot; images" row="1000" col="4">
+    <outline title="&quot;E3 2019&quot; images" searchQuery="{&quot;topic&quot;:&quot;E3 2019 AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;E3&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;E3&quot; articles" row="2000" col="1">
+    <outline title="All &quot;E3&quot; articles" searchQuery="{&quot;topic&quot;:&quot;E3&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;E3&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;E3\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;E3&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;E3&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;E3 AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;E3&quot; images" row="1000" col="4">
+    <outline title="&quot;E3&quot; images" searchQuery="{&quot;topic&quot;:&quot;E3 AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Attentat De Magnanville&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Attentat De Magnanville&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Attentat De Magnanville&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Attentat De Magnanville&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Attentat De Magnanville&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Attentat De Magnanville\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Attentat De Magnanville&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Attentat De Magnanville&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Attentat De Magnanville AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Attentat De Magnanville&quot; images" row="1000" col="4">
+    <outline title="&quot;Attentat De Magnanville&quot; images" searchQuery="{&quot;topic&quot;:&quot;Attentat De Magnanville AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Noël&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Noël&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Noël&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Noël&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Noël&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Noël\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Noël&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Noël&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Noël AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Noël&quot; images" row="1000" col="4">
+    <outline title="&quot;Noël&quot; images" searchQuery="{&quot;topic&quot;:&quot;Noël AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;AMD Radeon&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;AMD Radeon&quot; articles" row="2000" col="1">
+    <outline title="All &quot;AMD Radeon&quot; articles" searchQuery="{&quot;topic&quot;:&quot;AMD Radeon&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;AMD Radeon&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;AMD Radeon\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;AMD Radeon&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;AMD Radeon&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;AMD Radeon AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;AMD Radeon&quot; images" row="1000" col="4">
+    <outline title="&quot;AMD Radeon&quot; images" searchQuery="{&quot;topic&quot;:&quot;AMD Radeon AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Numérique Livraison&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Numérique Livraison&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Numérique Livraison&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Numérique Livraison&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Numérique Livraison&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Numérique Livraison\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Numérique Livraison&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Numérique Livraison&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Numérique Livraison AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Numérique Livraison&quot; images" row="1000" col="4">
+    <outline title="&quot;Numérique Livraison&quot; images" searchQuery="{&quot;topic&quot;:&quot;Numérique Livraison AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+ </body>
+</opml>
