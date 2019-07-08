@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+ <head>
+  <title>Personal Dashboard</title>
+  <type>Premium</type>
+  <creationDate>2019-07-08 11:57:37</creationDate>
+ </head>
+ <body>
+  <outline title="Bienvenue" icon="home" iconColor="blue" cols="4" layout="4-1">
+   <outline title="RSS 2.0 Developpez.com : Club des développeurs Web PHP : actualités, cours, tutoriels, programmati" xmlUrl="https://php.developpez.com/rss.php" htmlUrl="http://php.developpez.com/index/rss" type="rss" row="15.625" col="1"/>
+   <outline title="RSS" xmlUrl="https://fr.semrush.com/blog/feed/" htmlUrl="https://fr.semrush.com/blog/" type="rss" row="31.25" col="1"/>
+   <outline title="Actualite – FrenchWeb.fr" xmlUrl="https://www.frenchweb.fr/actualite/feed/" htmlUrl="https://www.frenchweb.fr/" type="rss" row="62.5" col="1"/>
+   <outline title="Abondance » Flux" xmlUrl="https://www.abondance.com/feed" htmlUrl="https://www.abondance.com/" type="rss" row="125" col="1"/>
+   <outline title="E-business, FinTech, Big Data, IoT, tendances média, décideurs..." xmlUrl="https://www.journaldunet.com/rss/" htmlUrl="https://www.journaldunet.com/" type="rss" row="250" col="1"/>
+   <outline title="InternetActu.net » Flux" xmlUrl="http://www.internetactu.net/feed/" htmlUrl="http://www.internetactu.net/" type="rss" row="500" col="1"/>
+   <outline type="WelcomeVip" title="Welcome to your Dashboard" row="1000" col="1">
+    <outline color="borderless" mode="welcome"/>
+   </outline>
+   <outline type="PotionWizard" title="Alert me if it'll rain tomorrow" row="4000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Alert me if it'll rain tomorrow&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.weather&quot;,&quot;reference&quot;:&quot;weather_forecast&quot;,&quot;name&quot;:&quot;com.weather.city.{city}.forecast.{day}&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;weatherConditions&quot;:&quot;Rain&quot;},&quot;formula&quot;:&quot;bluntConditions is 'Rain'&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Alert me if it'll rain tomorrow"/>
+   </outline>
+   <outline type="Weather" title="Paris, France" row="1000" col="3">
+    <outline unit="1" town="48.857/2.352"/>
+   </outline>
+   <outline type="TodoList" title="To Do List" row="1000" col="4">
+    <outline todos="{&quot;t1&quot;:{&quot;title&quot;:&quot;Organize your life!&quot;,&quot;color&quot;:&quot;#078d93&quot;,&quot;id&quot;:&quot;t1&quot;},&quot;t2&quot;:{&quot;title&quot;:&quot;Write Things Down&quot;,&quot;color&quot;:&quot;#96BC0D&quot;,&quot;id&quot;:&quot;t2&quot;},&quot;t3&quot;:{&quot;title&quot;:&quot;Make Schedules and Deadlines&quot;,&quot;color&quot;:&quot;#96BC0D&quot;,&quot;id&quot;:&quot;t3&quot;}}"/>
+   </outline>
+  </outline>
+ </body>
+</opml>
