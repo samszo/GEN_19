@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+ <head>
+  <title>Personal Dashboard</title>
+  <type>Premium</type>
+  <creationDate>2019-07-08 11:58:12</creationDate>
+ </head>
+ <body>
+  <outline title="Bienvenue" icon="home" iconColor="blue" cols="4" layout="4-1">
+   <outline type="WelcomeVip" title="Welcome to your Dashboard" row="1000" col="1">
+    <outline color="borderless" mode="welcome"/>
+   </outline>
+   <outline type="PotionWizard" title="Alert me if it'll rain tomorrow" row="4000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Alert me if it'll rain tomorrow&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.weather&quot;,&quot;reference&quot;:&quot;weather_forecast&quot;,&quot;name&quot;:&quot;com.weather.city.{city}.forecast.{day}&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;weatherConditions&quot;:&quot;Rain&quot;},&quot;formula&quot;:&quot;bluntConditions is 'Rain'&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Alert me if it'll rain tomorrow"/>
+   </outline>
+   <outline type="Weather" title="Paris, France" row="1000" col="3">
+    <outline unit="1" town="48.857/2.352"/>
+   </outline>
+   <outline type="TodoList" title="To Do List" row="1000" col="4">
+    <outline todos="{&quot;t1&quot;:{&quot;title&quot;:&quot;Organize your life!&quot;,&quot;color&quot;:&quot;#078d93&quot;,&quot;id&quot;:&quot;t1&quot;},&quot;t2&quot;:{&quot;title&quot;:&quot;Write Things Down&quot;,&quot;color&quot;:&quot;#96BC0D&quot;,&quot;id&quot;:&quot;t2&quot;},&quot;t3&quot;:{&quot;title&quot;:&quot;Make Schedules and Deadlines&quot;,&quot;color&quot;:&quot;#96BC0D&quot;,&quot;id&quot;:&quot;t3&quot;}}"/>
+   </outline>
+  </outline>
+  <outline title="Tech &gt; Actualité (FR)" icon="rss" iconColor="grey" cols="4" layout="4-1">
+   <outline title="InternetActu.net" xmlUrl="http://feeds.feedburner.com/internetactu/bcmJ" htmlUrl="http://www.internetactu.net/" type="rss" row="500" col="1"/>
+   <outline title="Numerama" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efd2bd5e-26ca-11e8-a39a-a0369fec958c&quot;,&quot;token&quot;:&quot;60fcabc3503d339f7d85ba96204272501a83b11f&quot;}]}&amp;format=atom" type="rss" row="1000" col="1"/>
+   <outline title="Numerama" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;6c3e2227-b22b-11e6-b093-782bcb11773e&quot;,&quot;token&quot;:&quot;115ac8a4eb1400a9a30456610203be11d68c3ce1&quot;}]}&amp;format=atom" type="rss" row="2000" col="1"/>
+   <outline title="Minimachines.net" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;765ce252-b22b-11e6-b093-782bcb11773e&quot;,&quot;token&quot;:&quot;45d8f0d5ef33b8a878f1eb98012f2e7773c93f63&quot;}]}&amp;format=atom" type="rss" row="1000" col="3"/>
+   <outline title="Minimachines.net" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efd9719e-26ca-11e8-bf22-a0369fec958c&quot;,&quot;token&quot;:&quot;85327a53d56d02fc23e20b6157572b38b8482773&quot;}]}&amp;format=atom" type="rss" row="2000" col="3"/>
+   <outline title="GNT - actualités" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efdea89e-26ca-11e8-a758-a0369fec958c&quot;,&quot;token&quot;:&quot;f3d448adf2cce0e80b6b76caa70fd55fca9cae60&quot;}]}&amp;format=atom" type="rss" row="3000" col="3"/>
+   <outline title="GNT - actualités" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;6c3e2224-b22b-11e6-b093-782bcb11773e&quot;,&quot;token&quot;:&quot;8077304aa07e665eda9f50a86aeda0f717e4c130&quot;}]}&amp;format=atom" type="rss" row="4000" col="3"/>
+   <outline title="BDM" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efd57e0e-26ca-11e8-817c-a0369fec958c&quot;,&quot;token&quot;:&quot;79ce607c2874515b29497f66b7b37ceb5599698e&quot;}]}&amp;format=atom" type="rss" row="1000" col="4"/>
+   <outline title="BDM" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;cc10dd90-57eb-11e6-a798-782bcb10e966&quot;,&quot;token&quot;:&quot;2e83da91be91bb137bcf2951a8767bce636a4656&quot;}]}&amp;format=atom" type="rss" row="2000" col="4"/>
+   <outline title="Maddyness – Le Magazine sur l’actualité des Startups Françaises" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;6b3c54cf-b22b-11e6-b093-782bcb11773e&quot;,&quot;token&quot;:&quot;cd2e1d958d15cbf99c36efa382436f9be10ac62f&quot;}]}&amp;format=atom" type="rss" row="3000" col="4"/>
+   <outline title="Maddyness – Le Magazine sur l’actualité des Startups Françaises" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efdc07c4-26ca-11e8-a55d-a0369fec958c&quot;,&quot;token&quot;:&quot;fa108b4980f782f7d9c69e36ad8755fa2fd3b70c&quot;}]}&amp;format=atom" type="rss" row="4000" col="4"/>
+   <outline title="La Quadrature du Net" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;891e7911-b22c-11e6-b093-782bcb11773e&quot;,&quot;token&quot;:&quot;2991052ae9880123318f61c019aa328d45445f1e&quot;}]}&amp;format=atom" type="rss" row="5000" col="4"/>
+   <outline title="La Quadrature du Net" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;efe2e5ee-26ca-11e8-83b8-a0369fec958c&quot;,&quot;token&quot;:&quot;1845f9ac2f6f7cc4389dcda6948dfe294ea048dd&quot;}]}&amp;format=atom" type="rss" row="6000" col="4"/>
+  </outline>
+  <outline title="Tech &gt; News" icon="rss" iconColor="grey" cols="4" layout="4-1">
+   <outline title="Engadget RSS Feed" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;96920ac7-b241-11e6-acd0-782bcb10e966&quot;,&quot;token&quot;:&quot;87969ab450d263c81db6cfc18c3d39b5017ed185&quot;}]}&amp;format=atom" type="rss" row="2000" col="1"/>
+   <outline type="SmartFilter" title="Today's articles from &quot;Tech &amp;gt; News&quot; tab" row="5000" col="2">
+    <outline title="Today's articles from &quot;Tech &gt; News&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Tech &gt; News&quot;]}}" searchToken="" view="normal" viewHeight="medium" color="" date_from="-2days" date_to="now" range="daily"/>
+   </outline>
+   <outline title="The Next Web" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;96920ac1-b241-11e6-acd0-782bcb10e966&quot;,&quot;token&quot;:&quot;b20b85941a4812ebf312f255ab5ffb61884aed96&quot;}]}&amp;format=atom" type="rss" row="1000" col="3"/>
+   <outline title="TechCrunch" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;96920ac0-b241-11e6-acd0-782bcb10e966&quot;,&quot;token&quot;:&quot;dee5ce45ce2ac44bfdccbb0fa03a49e9aa6b2e7b&quot;}]}&amp;format=atom" type="rss" row="2000" col="3"/>
+   <outline title="Lifehacker" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f022b962-26ca-11e8-8379-a0369fec958c&quot;,&quot;token&quot;:&quot;fe520fabf7224c80d9a2defd8c7a823344ba6ede&quot;}]}&amp;format=atom" type="rss" row="3000" col="3"/>
+   <outline title="VentureBeat" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;96920abe-b241-11e6-acd0-782bcb10e966&quot;,&quot;token&quot;:&quot;fb087083e34d8290cfcf2039da1e84c41044b70a&quot;}]}&amp;format=atom" type="rss" row="500" col="4"/>
+   <outline title="Digital Trends" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;7a924c8e-b241-11e6-b093-782bcb11773e&quot;,&quot;token&quot;:&quot;5f6dc5e25c90157b4615df0d30582f39caacbd33&quot;}]}&amp;format=atom" type="rss" row="1500" col="4"/>
+   <outline title="Gizmodo" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;34a77fca-26c9-11e8-9a7d-a0369fec9378&quot;,&quot;token&quot;:&quot;21e02256e6fcaa8f64eb6e84c38338cf776ddd11&quot;}]}&amp;format=atom" type="rss" row="2500" col="4"/>
+  </outline>
+  <outline title="Tech &gt; Apple (EN)" icon="rss" iconColor="grey" cols="4" layout="4-1">
+   <outline title="9to5Mac" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;666aa1c8-e182-11e6-afc0-782bcb10e966&quot;,&quot;token&quot;:&quot;4b3874cd77f32b9441109631c5e6c2c26e1ac296&quot;}]}&amp;format=atom" type="rss" row="2000" col="1"/>
+   <outline type="SmartFilter" title="Today's articles from &quot;Tech &gt; Apple (EN)&quot; tab" row="5000" col="2">
+    <outline title="Today's articles from &quot;Tech &gt; Apple (EN)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Tech &gt; Apple (EN)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="Apple: Topic watch" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Apple: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Apple: Topic watch"/>
+   </outline>
+   <outline type="Library" row="9000" col="2" title="Apple" viewHeight="medium" libraryId="2317864599" libraryToken="784e340f552a149483037690e993fb044edc0121"/>
+   <outline title="The Mac Observer" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;6785f25d-e182-11e6-afc0-782bcb10e966&quot;,&quot;token&quot;:&quot;295269a7977493fe85abb3072011354a2da09018&quot;}]}&amp;format=atom" type="rss" row="1000" col="3"/>
+   <outline title="MacRumors: Mac News and Rumors - All Stories" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;95b4cdc8-b241-11e6-acd0-782bcb10e966&quot;,&quot;token&quot;:&quot;b1f373561bd88c137af5c9aaf4dee60327d1413a&quot;}]}&amp;format=atom" type="rss" row="2000" col="3"/>
+   <outline title="MacSparky" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;6785f261-e182-11e6-afc0-782bcb10e966&quot;,&quot;token&quot;:&quot;fe923a5c86e9a28d573775411c4c5776aef1e50f&quot;}]}&amp;format=atom" type="rss" row="3000" col="3"/>
+   <outline title="Cult of Mac" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;8cf1cffe-b24f-11e6-b093-782bcb11773e&quot;,&quot;token&quot;:&quot;c017e2376ad3acda522044cdf6595107379a1a7f&quot;}]}&amp;format=atom" type="rss" row="500" col="4"/>
+   <outline title="AppleInsider - Frontpage News" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;666aa1c9-e182-11e6-afc0-782bcb10e966&quot;,&quot;token&quot;:&quot;cee7b339c7f96da14cc94f87f3807d0f64fa3e81&quot;}]}&amp;format=atom" type="rss" row="1500" col="4"/>
+   <outline title="Macworld" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;95b4cdca-b241-11e6-acd0-782bcb10e966&quot;,&quot;token&quot;:&quot;e25f720512156c968f9e565d60450a8133b00c89&quot;}]}&amp;format=atom" type="rss" row="2500" col="4"/>
+  </outline>
+  <outline title="Tech &gt; Android (EN)" icon="rss" iconColor="grey" cols="4" layout="4-1">
+   <outline title="Android Central - Android Forums, News, Reviews, Help and Android Wallpapers" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;96920ac6-b241-11e6-acd0-782bcb10e966&quot;,&quot;token&quot;:&quot;8b18387c316a7e958ac6044492875723aeeccefe&quot;}]}&amp;format=atom" type="rss" row="2000" col="1"/>
+   <outline type="SmartFilter" title="Today's articles from &quot;Tech &gt; Android (EN)&quot; tab" row="5000" col="2">
+    <outline title="Today's articles from &quot;Tech &gt; Android (EN)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Tech &gt; Android (EN)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="Android: Topic watch" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Android: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Android: Topic watch"/>
+   </outline>
+   <outline type="Library" row="9000" col="2" title="Android" viewHeight="medium" libraryId="2317864527" libraryToken="4f15a8d14e732c7db7ff1eaeda8cbbbcad3aca68"/>
+   <outline title="TalkAndroid" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;6bf50843-e182-11e6-b3e2-782bcb11773e&quot;,&quot;token&quot;:&quot;5a44853d2f38ce0fe0a4cdf099e579342e204702&quot;}]}&amp;format=atom" type="rss" row="1000" col="3"/>
+   <outline title="Phandroid" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;6bf50840-e182-11e6-b3e2-782bcb11773e&quot;,&quot;token&quot;:&quot;ceaa67f48b164de601b08c70c8c373ae09ab97b3&quot;}]}&amp;format=atom" type="rss" row="2000" col="3"/>
+   <outline title="Droid Life" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;6d1e749a-e182-11e6-b3e2-782bcb11773e&quot;,&quot;token&quot;:&quot;6a3e6258a6630d79024967f2e5121802ac33b0ce&quot;}]}&amp;format=atom" type="rss" row="3000" col="3"/>
+   <outline title="Android Authority" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;6bf50844-e182-11e6-b3e2-782bcb11773e&quot;,&quot;token&quot;:&quot;907e011ed542bb267bc3b815128a407a3b69bffa&quot;}]}&amp;format=atom" type="rss" row="500" col="4"/>
+   <outline title="AndroidGuys" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;6bf50841-e182-11e6-b3e2-782bcb11773e&quot;,&quot;token&quot;:&quot;ccede37637e35a7be17ff41c9c025f004d2057db&quot;}]}&amp;format=atom" type="rss" row="1500" col="4"/>
+   <outline title="Android Headlines" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;6bf50846-e182-11e6-b3e2-782bcb11773e&quot;,&quot;token&quot;:&quot;1e3dc2ed48bc9db1fa631cbf5680da8c7986f49e&quot;}]}&amp;format=atom" type="rss" row="2500" col="4"/>
+  </outline>
+  <outline title="Tech &gt; Windows (EN)" icon="rss" iconColor="grey" cols="4" layout="4-1">
+   <outline title="Windows Blog" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;70c6ee3c-e182-11e6-b3e2-782bcb11773e&quot;,&quot;token&quot;:&quot;501a5b26e43a698314ebca53bcb95f348ead8d99&quot;}]}&amp;format=atom" type="rss" row="2000" col="1"/>
+   <outline type="SmartFilter" title="Today's articles from &quot;Tech &gt; Windows (EN)&quot; tab" row="5000" col="2">
+    <outline title="Today's articles from &quot;Tech &gt; Windows (EN)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Tech &gt; Windows (EN)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="Windows: Topic watch" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Windows: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Windows: Topic watch"/>
+   </outline>
+   <outline type="Library" row="9000" col="2" title="Windows" viewHeight="medium" libraryId="2317974808" libraryToken="b38c62d040c1f3c2d024e3bc7146f845c3e2abb2"/>
+   <outline title="All About Windows Phone" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;70c6ee35-e182-11e6-b3e2-782bcb11773e&quot;,&quot;token&quot;:&quot;0e45d9e485d6accaf502acbbc4fa468801d47576&quot;}]}&amp;format=atom" type="rss" row="1000" col="3"/>
+   <outline title="Windows Central - News, Forums, Reviews, Help for Windows 10 and all things Microsoft." xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;70c6ee30-e182-11e6-b3e2-782bcb11773e&quot;,&quot;token&quot;:&quot;ee23e1d94d8043a21695cfb77d638ac3029bbced&quot;}]}&amp;format=atom" type="rss" row="2000" col="3"/>
+   <outline title="feed:&quot;&quot;" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;71a92445-e182-11e6-b3e2-782bcb11773e&quot;,&quot;token&quot;:&quot;ec30907d0f373fa3c64277fa95abf13e991e7e40&quot;}]}&amp;format=atom" type="rss" row="500" col="4"/>
+   <outline title="ZDNet | bott RSS" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;70c6ee3a-e182-11e6-b3e2-782bcb11773e&quot;,&quot;token&quot;:&quot;55c51d5456e3ddc9f308bf4b5401f2ff714e2bfb&quot;}]}&amp;format=atom" type="rss" row="1500" col="4"/>
+   <outline title="PCWorld" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;96920acb-b241-11e6-acd0-782bcb10e966&quot;,&quot;token&quot;:&quot;1c437f7008fe65bd0dd46d2e272ad548ceb7c470&quot;}]}&amp;format=atom" type="rss" row="2500" col="4"/>
+  </outline>
+ </body>
+</opml>
