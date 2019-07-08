@@ -22,30 +22,45 @@ Se tenir informée des dernières actualités et mise à jour du framework
 Je vais utiliser plus les flux que les newsletters afin de limiter le bruit suscité par la veille.
 
 [Quora](https://fr.quora.com/)
+
 [Blog prestashop](https://www.prestashop.com/fr/blog)
+
 [Blog WP](https://wpmarmite.com/)
+
 [Blog semrush](https://fr.semrush.com/blog/)
+
 [blog Les Jeudis](https://blog.lesjeudis.com/)
 
 ## Diggo
 Bookmarquer les pages d'articles interressantes
+
+https://www.diigo.com/user/shinobi0
 
 ## Les flux 
 
 Connaitre les dernières infos d'un site
 
 ### Actu dev
+
 https://php.developpez.com
+
 https://python.developpez.com/
 
 ### Actu SEO
+
 https://fr.semrush.com/blog/
+
 https://www.abondance.com/
 
 ### Actu généraliste digital
+
 https://www.journaldunet.com/
+
 http://www.internetactu.net/
+
 https://www.frenchweb.fr/
+
+https://www.zdnet.fr/actualites/web-4000237456q.htm
 
 
 
