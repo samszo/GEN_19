@@ -10,7 +10,7 @@ et ce dans le but d'être le meilleur de son domaine
 
 ### Google Alerte
 
-Google Alerts est un service qui envoie un e-mail lorsqu'une nouvelle page web correspondant aux mots-clés que l'on achoisi, apparaît dans
+Google Alerts est un service qui envoie un e-mail lorsqu'une nouvelle page web correspondant aux mots-clés que l'on a choisi apparaît dans
 les résultats Google
 
 ### Quora
@@ -22,10 +22,10 @@ Quelqu'un pourrait-il m'expliquer comment le HTML, le CSS, le JavaScript, le PHP
 Quelles sont les principales choses que les gens attendent d'un site web ?
 Si Python est lent par rapport à d'autres langues, pourquoi l'utilisons-nous toujours ?
 
-### Netvibes
-
-Netvibes est un site web personnalisable qui donne accès à une multitude de services représentés sous forme d'onglet
-
 ### Diigo
 
-Diigo est un site web qui permet de partager des pages web et d’y ajouter des tags et des annotations
+Diigo est un site web qui permet de partager et trier des pages web en y ajoutant des tags et des annotations
+
+### Netvibes
+
+Netvibes est un site web personnalisable qui permet de trier des flux RSS dans des onglets
