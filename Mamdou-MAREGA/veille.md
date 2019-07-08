@@ -15,4 +15,9 @@ pour suivre l'actualité à temps
 
 ### l'étudiant
 
+pour suivre l'actualité concernant les cours , concours , résultats ..
+
+### monde des grandes écoles et universités
+
+suivre les informations concernant les études supérieures
 
