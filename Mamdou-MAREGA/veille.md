@@ -38,3 +38,11 @@ https://www.cidj.com/metiers/developpeur-developpeuse-web
 
 https://www.diigo.com/profile/mamadou93
 
+## les newletters
+
+### Pinterest
+
+### quora
+
+
+
