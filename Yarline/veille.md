@@ -3,7 +3,10 @@
 ## Netvibes sources (flux RSS)
 #### W3C news (consortium)
 #### BDM
-##newletters
+#### journaldunet
+#### developpez.com
+
+## newletters
 
 ## Les alertes Google
 #### développement web
