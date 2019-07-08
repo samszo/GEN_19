@@ -13,5 +13,5 @@
 #### web
 #### webdesign/motiondesign
 #### référencement/SEO
-#### inttelligence artificielle
+#### intelligence artificielle
 #### digital marketing/marketing numérique
