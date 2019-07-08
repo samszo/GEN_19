@@ -13,13 +13,9 @@ et ce dans le but d'être le meilleur de son domaine
 Google Alerts est un service qui envoie un e-mail lorsqu'une nouvelle page web correspondant aux mots-clés que l'on achoisi, apparaît dans
 les résultats Google
 
-HTML, CSS, DEVELOPPEMENT WEB, ANDROID, IOS, GAFAM
-
 ### Quora
 
 Quora est un site qui permet à ses utilisateurs de créer, d'éditer et d'organiser des questions-réponses
-
-Développement web, Développement d'applications mobiles
 
 Quelqu'un pourrait-il m'expliquer comment le HTML, le CSS, le JavaScript, le PHP et le MySQL fonctionnent ensemble ?
 Quelles sont les principales choses que les gens attendent d'un site web ?
@@ -28,8 +24,6 @@ Si Python est lent par rapport à d'autres langues, pourquoi l'utilisons-nous to
 ### Netvibes
 
 Netvibes est un site web personnalisable qui donne accès à une multitude de services représentés sous forme d'onglet
-
-Mobile, Système d'exploitation, Cloud, Média
 
 Rajouter: Langage Informatique, GAFAM, BigData
 
