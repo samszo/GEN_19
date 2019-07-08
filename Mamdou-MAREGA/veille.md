@@ -16,7 +16,6 @@ pour récupérer les dérnières informations sur le css3
 
 ### c++
 
-
 ## Les flux rss
 
 ### le monde
@@ -34,6 +33,7 @@ suivre les informations concernant les études supérieures
 pour suivre les résultats , les transferts ..
 
 ##diigo
+
 https://www.cidj.com/metiers/developpeur-developpeuse-web
 
 https://www.diigo.com/profile/mamadou93
