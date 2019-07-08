@@ -35,5 +35,6 @@ pour suivre les résultats , les transferts ..
 
 ##diigo
 https://www.cidj.com/metiers/developpeur-developpeuse-web
+
 https://www.diigo.com/profile/mamadou93
 
