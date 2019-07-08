@@ -9,8 +9,11 @@ Une veille, c'est le fait de se mettre régulièrement à jour concernant les av
 <h3>Alertes Google</h3>
 
 HTML
+
 CSS
+
 Javascript
+
 Ruby
 
 <h3>Newsletter</h3>
