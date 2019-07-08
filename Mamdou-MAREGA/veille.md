@@ -48,7 +48,8 @@ recevoir des notifications sur le vocabulaire anglais
 
 ### linkedln
 
-recevoir des notifications sur les entreprises qui recrutent dans le domaine de l'informatique
+recevoir des notifications sur les entreprises qui recrutent dans le domaine de l'informatique.
+
 
 
 
