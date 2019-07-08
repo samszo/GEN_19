@@ -9,3 +9,12 @@ C'est l'acronyme pour HyperText Markup Language 5. Il est la dernière révision
 
 ### CSS3 ### 
 Le CSS de niveau 3 est un langage qui fonctionne avec le langage HTML de niveau 5. L'acronyme CSS est de l'anglais et il signifie Cascading Style Sheets. Nous pouvons le traduire par feuilles de style en cascade. L'extension est .css. Ce langage permet "l'habillement" de la page WEB.
+
+#### Newsletter ####
+
+Je suis inscrit à la "newsletter" du site WEB : http://www.internetactu.net/ .
+
+##### RSS #####
+
+J'ai créé un flux RSS sur dashboard en rapport avec les jeux vidéos car j'aime bien jouer grâce des consoles de jeux vidéos.
+J'ai également créé un flux RSS sur la musique qui me passionne.
