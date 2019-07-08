@@ -14,22 +14,26 @@ signatures anonymes; protection actes de propriété; décentralisation centre p
 Newsletters
 ===========
 
-INTERNETACTU.NET
-----------------
-LEMONDEINFORMATIQUE
-----------------------
+#INTERNETACTU.NET
+
+#LEMONDEINFORMATIQUE
+
 
 Flux rss 
 =========
-lemondeinfo: large panel de sjts traités sur domaine informatique. Va de grille de salaire, à présentation nouvelle techno, explication
-nouvelles legislation en vigueur sur droits utilisateurs internet par ex 
+
+*lemondeinfo: grille de salaire, nouvelles technologies,
+nouvelles legislation en vigueur sur droits utilisateurs internet, conférences 
 
 Netvibes
 ========
-usinedigitale: actualités nvlles technologie comme IA, cybersecurité, 5g, offre emploi, formation, annuaire start up  
+
+*usinedigitale (site axé pro): actualités nvlles technologie comme IA, cybersecurité, 5g, offre emploi, formation, annuaire start up  
 
 
 Diigo 
 =====
-internetactu: progrès tech et société, 
+
+[internetactu] (https://www.diigo.com/user/maylaalilat?query=%40www.internetactu.net)
+
 
