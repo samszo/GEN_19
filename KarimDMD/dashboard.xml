@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+ <head>
+  <title>Personal Dashboard</title>
+  <type>Premium</type>
+  <creationDate>2019-07-08 11:57:35</creationDate>
+ </head>
+ <body>
+  <outline title="Bienvenue" icon="home" iconColor="blue" cols="4" layout="4-1">
+   <outline type="WelcomeVip" title="Welcome to your Dashboard" row="1000" col="1">
+    <outline color="borderless" mode="welcome"/>
+   </outline>
+   <outline type="PotionWizard" title="Alert me if it'll rain tomorrow" row="4000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Alert me if it'll rain tomorrow&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.weather&quot;,&quot;reference&quot;:&quot;weather_forecast&quot;,&quot;name&quot;:&quot;com.weather.city.{city}.forecast.{day}&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;weatherConditions&quot;:&quot;Rain&quot;},&quot;formula&quot;:&quot;bluntConditions is 'Rain'&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Alert me if it'll rain tomorrow"/>
+   </outline>
+   <outline type="Weather" title="Paris, France" row="1000" col="3">
+    <outline unit="1" town="48.857/2.352"/>
+   </outline>
+   <outline type="TodoList" title="To Do List" row="1000" col="4">
+    <outline todos="{&quot;t1&quot;:{&quot;title&quot;:&quot;Organize your life!&quot;,&quot;color&quot;:&quot;#078d93&quot;,&quot;id&quot;:&quot;t1&quot;},&quot;t2&quot;:{&quot;title&quot;:&quot;Write Things Down&quot;,&quot;color&quot;:&quot;#96BC0D&quot;,&quot;id&quot;:&quot;t2&quot;},&quot;t3&quot;:{&quot;title&quot;:&quot;Make Schedules and Deadlines&quot;,&quot;color&quot;:&quot;#96BC0D&quot;,&quot;id&quot;:&quot;t3&quot;}}"/>
+   </outline>
+  </outline>
+  <outline title="Sport &gt; Football (FR)" icon="rss" iconColor="grey" cols="4" layout="4-1">
+   <outline title="SO FOOT.com" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f06b7274-26ca-11e8-be79-a0369fec958c&quot;,&quot;token&quot;:&quot;e2dbcb88fad5f0c7b9e74b8318520ea397d1c3a3&quot;}]}&amp;format=atom" type="rss" row="1000" col="1"/>
+   <outline title="SO FOOT.com" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;050b3954-f43f-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;9cf4623394f4135554b9d98b1eef57dfab25d504&quot;}]}&amp;format=atom" type="rss" row="2000" col="1"/>
+   <outline type="SmartFilter" title="Today's articles from &quot;Sport &gt; Football (FR)&quot; tab" row="1000" col="2">
+    <outline title="Today's articles from &quot;Sport &gt; Football (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Sport &gt; Football (FR)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="Today's articles from &quot;Sport &gt; Football (FR)&quot; tab" row="2000" col="2">
+    <outline title="Today's articles from &quot;Sport &gt; Football (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Sport &gt; Football (FR)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="Football: Topic watch" row="3000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Football: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Football: Topic watch"/>
+   </outline>
+   <outline type="PotionWizard" title="Football: Topic watch" row="4000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Football: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Football: Topic watch"/>
+   </outline>
+   <outline type="Library" row="5000" col="2" title="Football" viewHeight="medium" libraryId="2313889639" libraryToken="44162941b903730994c45a786642b9f379f5c457"/>
+   <outline type="Library" row="6000" col="2" title="Football" viewHeight="medium" libraryId="2313889620" libraryToken="44162941b903730994c45a786642b9f379f5c457"/>
+   <outline title="Les Cahiers du Football - A la une" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;050b3956-f43f-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;acc66c3108b07678cad0f97fa16225d348d1dfcb&quot;}]}&amp;format=atom" type="rss" row="1000" col="3"/>
+   <outline title="Les Cahiers du Football - A la une" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f0758cc8-26ca-11e8-bc50-a0369fec958c&quot;,&quot;token&quot;:&quot;635fd949c9dd32a0691bee7c04841400f3bd2d81&quot;}]}&amp;format=atom" type="rss" row="2000" col="3"/>
+   <outline title="HorsJeu.net" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f086335c-26ca-11e8-b76f-a0369fec958c&quot;,&quot;token&quot;:&quot;8c66aaa830ab80e662d0867f966edf0571af32f6&quot;}]}&amp;format=atom" type="rss" row="3000" col="3"/>
+   <outline title="HorsJeu.net" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;050b3958-f43f-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;c61eb461d51ee083fb0dc850069f5d45f499f165&quot;}]}&amp;format=atom" type="rss" row="4000" col="3"/>
+   <outline title="ECOFOOT.FR" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f08ea5fa-26ca-11e8-a7cd-a0369fec958c&quot;,&quot;token&quot;:&quot;7df525fb131e032a2220209cc4a173728d74fbab&quot;}]}&amp;format=atom" type="rss" row="5000" col="3"/>
+   <outline title="ECOFOOT.FR" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;050b395a-f43f-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;ed6a20bd27acc086b30ae6b42397fddef2c1c870&quot;}]}&amp;format=atom" type="rss" row="6000" col="3"/>
+   <outline title="Foot Sur 7 : Site d'actualité foot et transferts" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f06f09ca-26ca-11e8-95e8-a0369fec958c&quot;,&quot;token&quot;:&quot;20346ac8dad1a36b3ac3288c0f806f94caedcf97&quot;}]}&amp;format=atom" type="rss" row="1000" col="4"/>
+   <outline title="Foot Sur 7 : Site d'actualité foot et transferts" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;050b3955-f43f-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;d58002b40a832a39c645610c9447a6da6f240919&quot;}]}&amp;format=atom" type="rss" row="2000" col="4"/>
+   <outline title="L'After Foot" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;050b3957-f43f-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;50bddbd2f8723734067f17e09c6b3a48a2fec2b9&quot;}]}&amp;format=atom" type="rss" row="3000" col="4"/>
+   <outline title="L'After Foot" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f083308a-26ca-11e8-9a3b-a0369fec958c&quot;,&quot;token&quot;:&quot;89717fa7a1660bae29f2467db9f522cb741e84f2&quot;}]}&amp;format=atom" type="rss" row="4000" col="4"/>
+   <outline title="Footpack" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f08a630a-26ca-11e8-ae44-a0369fec958c&quot;,&quot;token&quot;:&quot;6e2dec351aa94bd2c8fe36006efec81dd41b362b&quot;}]}&amp;format=atom" type="rss" row="5000" col="4"/>
+   <outline title="Footpack" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;050b3959-f43f-11e6-8ca1-782bcb11749d&quot;,&quot;token&quot;:&quot;638d98df7e16dc7129ca6f04bcb2bf3b9231a7fb&quot;}]}&amp;format=atom" type="rss" row="6000" col="4"/>
+  </outline>
+  <outline title="Sport &gt; Tennis (FR)" icon="rss" iconColor="grey" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="federer" row="500" col="1">
+    <outline title="" searchQuery="{&quot;topic&quot;:&quot;federer&quot;}"/>
+   </outline>
+   <outline title="Tennis - sport" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f0938d9a-26ca-11e8-ad17-a0369fec958c&quot;,&quot;token&quot;:&quot;3aab81cebc8871da36de9136462e3e1f13aed741&quot;}]}&amp;format=atom" type="rss" row="1000" col="1"/>
+   <outline title="Tennis - sport" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;198c7c68-f437-11e6-bdf0-782bcb103767&quot;,&quot;token&quot;:&quot;3f1baa9f3ee558a9270c130cf112308419dcd2d3&quot;}]}&amp;format=atom" type="rss" row="2000" col="1"/>
+   <outline type="SmartFilter" title="Today's articles from &quot;Sport &gt; Tennis (FR)&quot; tab" row="1000" col="2">
+    <outline title="Today's articles from &quot;Sport &gt; Tennis (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Sport &gt; Tennis (FR)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="Today's articles from &quot;Sport &gt; Tennis (FR)&quot; tab" row="2000" col="2">
+    <outline title="Today's articles from &quot;Sport &gt; Tennis (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Sport &gt; Tennis (FR)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="Tennis: Topic watch" row="3000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Tennis: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Tennis: Topic watch"/>
+   </outline>
+   <outline type="PotionWizard" title="Tennis: Topic watch" row="4000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Tennis: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Tennis: Topic watch"/>
+   </outline>
+   <outline type="Library" row="5000" col="2" title="Tennis" viewHeight="medium" libraryId="2313889622" libraryToken="c7e4dcd4a2d8d0bd29fb014cbc03bcdcc514faf6"/>
+   <outline type="Library" row="6000" col="2" title="Tennis" viewHeight="medium" libraryId="2313889641" libraryToken="c7e4dcd4a2d8d0bd29fb014cbc03bcdcc514faf6"/>
+   <outline title="Tennis Magazine" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;198c7c6a-f437-11e6-bdf0-782bcb103767&quot;,&quot;token&quot;:&quot;7577d7064a93a897681660a2acb5d366d5632308&quot;}]}&amp;format=atom" type="rss" row="1000" col="3"/>
+   <outline title="Tennis Magazine" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f0994d16-26ca-11e8-8062-a0369fec958c&quot;,&quot;token&quot;:&quot;d41e8951dc887fe45dc7ddf91199036719711eea&quot;}]}&amp;format=atom" type="rss" row="2000" col="3"/>
+   <outline title="L'Equipe.fr Actu Tennis" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;198c7c6c-f437-11e6-bdf0-782bcb103767&quot;,&quot;token&quot;:&quot;17d938aad69f84b10ca223c8a8ee4eb9bdcaa3b6&quot;}]}&amp;format=atom" type="rss" row="3000" col="3"/>
+   <outline title="L'Equipe.fr Actu Tennis" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f09fce34-26ca-11e8-a9b5-a0369fec958c&quot;,&quot;token&quot;:&quot;b5f9cfe81d146fb40cb66b2cef1e997b34217db1&quot;}]}&amp;format=atom" type="rss" row="4000" col="3"/>
+   <outline title="Eurosport - Top des infos - Tennis" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;198c7c69-f437-11e6-bdf0-782bcb103767&quot;,&quot;token&quot;:&quot;49088c93328d19bbfecc7cd964f650f29c646467&quot;}]}&amp;format=atom" type="rss" row="1000" col="4"/>
+   <outline title="Eurosport - Top des infos - Tennis" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f0962ad2-26ca-11e8-a51f-a0369fec958c&quot;,&quot;token&quot;:&quot;aff2014ac2d17b898e3b197bed304a365b033848&quot;}]}&amp;format=atom" type="rss" row="2000" col="4"/>
+   <outline title="We Love Tennis" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;198c7c6b-f437-11e6-bdf0-782bcb103767&quot;,&quot;token&quot;:&quot;329c89cfaa1cf508433bf9f5202b90cf10a384f7&quot;}]}&amp;format=atom" type="rss" row="3000" col="4"/>
+   <outline title="We Love Tennis" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f09bd89c-26ca-11e8-a7ba-a0369fec958c&quot;,&quot;token&quot;:&quot;eb26f22f7c76ab73414bf1dbd4a9776599e48ddb&quot;}]}&amp;format=atom" type="rss" row="4000" col="4"/>
+  </outline>
+  <outline title="Art-Culture &gt; Musique (FR)" icon="rss" iconColor="grey" cols="4" layout="4-1">
+   <outline title="Les Inrocks - musique" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f1f978ca-26ca-11e8-bf21-a0369fec958c&quot;,&quot;token&quot;:&quot;75a2facb1fe44a6c4855125d6d26f0f613cc68e1&quot;}]}&amp;format=atom" type="rss" row="1000" col="1"/>
+   <outline title="Les Inrocks - musique" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;06deb838-be24-11e6-9009-842b2b5a33d6&quot;,&quot;token&quot;:&quot;d48c0c96e7d8460301bf650d1876b577d6bf969c&quot;}]}&amp;format=atom" type="rss" row="2000" col="1"/>
+   <outline type="SmartFilter" title="Today's articles from &quot;Art-Culture &gt; Musique (FR)&quot; tab" row="1000" col="2">
+    <outline title="Today's articles from &quot;Art-Culture &gt; Musique (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Art-Culture &gt; Musique (FR)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="Today's articles from &quot;Art-Culture &gt; Musique (FR)&quot; tab" row="2000" col="2">
+    <outline title="Today's articles from &quot;Art-Culture &gt; Musique (FR)&quot; tab" searchQuery="{&quot;topic&quot;:&quot;*:*&quot;,&quot;context&quot;:{&quot;tab&quot;:[&quot;Art-Culture &gt; Musique (FR)&quot;]}}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="Musique: Topic watch" row="3000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Musique: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Musique: Topic watch"/>
+   </outline>
+   <outline type="PotionWizard" title="Musique: Topic watch" row="4000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;Musique: Topic watch&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.library&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.library.{wid}.article.new&quot;,&quot;config&quot;:[]}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="Musique: Topic watch"/>
+   </outline>
+   <outline type="Library" row="5000" col="2" title="Musique" viewHeight="medium" libraryId="2316957735" libraryToken="07f585f71344bdf43038c70843cb328a93fd5d0c"/>
+   <outline type="Library" row="6000" col="2" title="Musique" viewHeight="medium" libraryId="2316957692" libraryToken="07f585f71344bdf43038c70843cb328a93fd5d0c"/>
+   <outline title="rss" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;06deb843-be24-11e6-9009-842b2b5a33d6&quot;,&quot;token&quot;:&quot;6ed0c349fa1d81ee259ffe057eb331100d4b74d8&quot;}]}&amp;format=atom" type="rss" row="1000" col="3"/>
+   <outline title="rss" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f1fe7320-26ca-11e8-973c-a0369fec958c&quot;,&quot;token&quot;:&quot;44b9cee40c729dbe38073edf06251a6923ed880d&quot;}]}&amp;format=atom" type="rss" row="2000" col="3"/>
+   <outline title="nova" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f2058caa-26ca-11e8-9a6d-a0369fec958c&quot;,&quot;token&quot;:&quot;e27ab3bf1ef40eaf713ee00ca86a2412b0607871&quot;}]}&amp;format=atom" type="rss" row="3000" col="3"/>
+   <outline title="NOVAPLANET" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;06deb847-be24-11e6-9009-842b2b5a33d6&quot;,&quot;token&quot;:&quot;d3803a9785b91bb94da78778a51213a87f61002f&quot;}]}&amp;format=atom" type="rss" row="4000" col="3"/>
+   <outline title="New Noise Magazine" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f20a6fa4-26ca-11e8-9097-a0369fec958c&quot;,&quot;token&quot;:&quot;e94a8886fcbd3d270076cc60f4165bd2d54ab81a&quot;}]}&amp;format=atom" type="rss" row="5000" col="3"/>
+   <outline title="Le Mellotron" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;07d56db1-be24-11e6-9009-842b2b5a33d6&quot;,&quot;token&quot;:&quot;0fa7c93939216d41d12f2ff8fe79c154e5dd737c&quot;}]}&amp;format=atom" type="rss" row="6000" col="3"/>
+   <outline title="Sound Of Britain" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f1fbeefc-26ca-11e8-8176-a0369fec958c&quot;,&quot;token&quot;:&quot;57cf6595a0ae2ce2f78d24edd72cfcb36cffbc98&quot;}]}&amp;format=atom" type="rss" row="1000" col="4"/>
+   <outline title="Sound Of Britain" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;07d56da2-be24-11e6-9009-842b2b5a33d6&quot;,&quot;token&quot;:&quot;9d16c6f222dcaccb689f918892ed2e25fe240bb0&quot;}]}&amp;format=atom" type="rss" row="2000" col="4"/>
+   <outline title="RADIO METAL" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;07d56da0-be24-11e6-9009-842b2b5a33d6&quot;,&quot;token&quot;:&quot;a00f5bbb7c03f6df4b39fba1395e67ae512690fc&quot;}]}&amp;format=atom" type="rss" row="3000" col="4"/>
+   <outline title="RADIO METAL" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f203659c-26ca-11e8-90e0-a0369fec958c&quot;,&quot;token&quot;:&quot;989fe7b92c36ff9743b63b51903349def2575a92&quot;}]}&amp;format=atom" type="rss" row="4000" col="4"/>
+   <outline title="Le Mellotron" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;f207f3c8-26ca-11e8-9a33-a0369fec958c&quot;,&quot;token&quot;:&quot;ba152624bd92efeb1149b4543ee2982a78fe7cd4&quot;}]}&amp;format=atom" type="rss" row="5000" col="4"/>
+   <outline title="Tsugi" xmlUrl="https://api.netvibes.com/searches/?actions={&quot;searches&quot;:[{&quot;id&quot;:&quot;06deb83a-be24-11e6-9009-842b2b5a33d6&quot;,&quot;token&quot;:&quot;07a85ddd5d3726d060a8f1396dd71d07864c49db&quot;}]}&amp;format=atom" type="rss" row="6000" col="4"/>
+  </outline>
+  <outline title="Interest: &quot;RMC&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;RMC&quot; articles" row="2000" col="1">
+    <outline title="All &quot;RMC&quot; articles" searchQuery="{&quot;topic&quot;:&quot;RMC&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;RMC&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;RMC\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;RMC&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;RMC&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;RMC AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;RMC&quot; images" row="1000" col="4">
+    <outline title="&quot;RMC&quot; images" searchQuery="{&quot;topic&quot;:&quot;RMC AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;News&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;News&quot; articles" row="2000" col="1">
+    <outline title="All &quot;News&quot; articles" searchQuery="{&quot;topic&quot;:&quot;News&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;News&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;News\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;News&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;News&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;News AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;News&quot; images" row="1000" col="4">
+    <outline title="&quot;News&quot; images" searchQuery="{&quot;topic&quot;:&quot;News AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Ligue 1&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Ligue 1&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Ligue 1&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Ligue 1&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Ligue 1&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Ligue 1\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Ligue 1&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Ligue 1&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Ligue 1 AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Ligue 1&quot; images" row="1000" col="4">
+    <outline title="&quot;Ligue 1&quot; images" searchQuery="{&quot;topic&quot;:&quot;Ligue 1 AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Neymar&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Neymar&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Neymar&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Neymar&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Neymar&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Neymar\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Neymar&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Neymar&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Neymar AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Neymar&quot; images" row="1000" col="4">
+    <outline title="&quot;Neymar&quot; images" searchQuery="{&quot;topic&quot;:&quot;Neymar AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Football&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Football&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Football&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Football&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Football&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Football\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Football&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Football&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Football AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Football&quot; images" row="1000" col="4">
+    <outline title="&quot;Football&quot; images" searchQuery="{&quot;topic&quot;:&quot;Football AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Wimbledon&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Wimbledon&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Wimbledon&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Wimbledon&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Wimbledon&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Wimbledon\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Wimbledon&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Wimbledon&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Wimbledon AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Wimbledon&quot; images" row="1000" col="4">
+    <outline title="&quot;Wimbledon&quot; images" searchQuery="{&quot;topic&quot;:&quot;Wimbledon AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Coupe Du Monde&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Coupe Du Monde&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Coupe Du Monde&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Coupe Du Monde&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Coupe Du Monde&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Coupe Du Monde\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Coupe Du Monde&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Coupe Du Monde&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Coupe Du Monde AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Coupe Du Monde&quot; images" row="1000" col="4">
+    <outline title="&quot;Coupe Du Monde&quot; images" searchQuery="{&quot;topic&quot;:&quot;Coupe Du Monde AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Ligue Des Champions&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Ligue Des Champions&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Ligue Des Champions&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Ligue Des Champions&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Ligue Des Champions&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Ligue Des Champions\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Ligue Des Champions&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Ligue Des Champions&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Ligue Des Champions AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Ligue Des Champions&quot; images" row="1000" col="4">
+    <outline title="&quot;Ligue Des Champions&quot; images" searchQuery="{&quot;topic&quot;:&quot;Ligue Des Champions AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+  <outline title="Interest: &quot;Premier League&quot;" icon="star" iconColor="green" cols="4" layout="4-1">
+   <outline type="SmartFilter" title="All &quot;Premier League&quot; articles" row="2000" col="1">
+    <outline title="All &quot;Premier League&quot; articles" searchQuery="{&quot;topic&quot;:&quot;Premier League&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="PotionWizard" title="New article" row="7000" col="2">
+    <outline collapsedLegend="true" preconfigData="{&quot;title&quot;:&quot;New article&quot;,&quot;triggers&quot;:[{&quot;ingredient&quot;:&quot;com.netvibes.stream&quot;,&quot;reference&quot;:&quot;new_article&quot;,&quot;name&quot;:&quot;com.netvibes.dashboard.{id}.stream.{uuid}.article.new&quot;,&quot;config&quot;:{&quot;formulaHelpers&quot;:{&quot;content&quot;:[&quot;Premier League&quot;],&quot;hasImages&quot;:true},&quot;formula&quot;:&quot;content contains \&quot;Premier League\&quot; and type of enclosures contains 'image')&quot;}}],&quot;actions&quot;:[{&quot;ingredient&quot;:&quot;mail&quot;,&quot;reference&quot;:&quot;mail&quot;,&quot;name&quot;:&quot;com.netvibes.mail&quot;,&quot;type&quot;:1,&quot;config&quot;:{&quot;general&quot;:[]}}],&quot;triggersLength&quot;:1,&quot;actionsLength&quot;:1,&quot;glue&quot;:2,&quot;formula&quot;:&quot;&quot;}" title="New article"/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Premier League&quot; articles from Press &amp; Media" row="1000" col="3">
+    <outline title="&quot;Premier League&quot; articles from Press &amp; Media" searchQuery="{&quot;topic&quot;:&quot;Premier League AND media:\&quot;press and media\&quot;&quot;}" searchToken="" view="" viewHeight="medium" color=""/>
+   </outline>
+   <outline type="SmartFilter" title="&quot;Premier League&quot; images" row="1000" col="4">
+    <outline title="&quot;Premier League&quot; images" searchQuery="{&quot;topic&quot;:&quot;Premier League AND image:\&quot;true\&quot;&quot;}" searchToken="" view="mosaic" viewHeight="medium" color=""/>
+   </outline>
+  </outline>
+ </body>
+</opml>
