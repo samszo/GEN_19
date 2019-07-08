@@ -22,3 +22,8 @@ pour suivre l'actualité concernant les cours , concours , résultats ..
 suivre les informations concernant les études supérieures
 
 ## sport
+pour suivre les résultats , les transferts ..
+
+##diigo
+https://www.cidj.com/metiers/developpeur-developpeuse-web
+
