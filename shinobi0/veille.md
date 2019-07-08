@@ -8,34 +8,44 @@ Se tenir informée des dernières actualités et mise à jour du language
 Se tenir informée des dernières actualités et mise à jour du language
 ### PHP 7
 Se tenir informée des dernières actualités et mise à jour du language
-### update google
-se tenir informée des derniers update google
+### Update google
+Se tenir informée des derniers update google
 ### Python
 Se tenir informée des dernières actualités et mise à jour du language
+### Symfony
+Se tenir informée des dernières actualités et mise à jour du framework
+### Laravel
+Se tenir informée des dernières actualités et mise à jour du framework
 
 ## Les newsletters
 
 Je vais utiliser plus les flux que les newsletters afin de limiter le bruit suscité par la veille.
-Liste inscription newsletter
 
-https://fr.quora.com/
-https://www.prestashop.com/fr/blog
-https://wpmarmite.com/
-https://fr.semrush.com/blog/
+[Quora](https://fr.quora.com/)
+[Blog prestashop](https://www.prestashop.com/fr/blog)
+[Blog WP](https://wpmarmite.com/)
+[Blog semrush](https://fr.semrush.com/blog/)
+[blog Les Jeudis](https://blog.lesjeudis.com/)
 
-##Diggo
+## Diggo
 Bookmarquer les pages d'articles interressantes
 
 ## Les flux 
+
 Connaitre les dernières infos d'un site
 
 ### Actu dev
 https://php.developpez.com
+https://python.developpez.com/
 
 ### Actu SEO
 https://fr.semrush.com/blog/
+https://www.abondance.com/
 
 ### Actu généraliste digital
+https://www.journaldunet.com/
+http://www.internetactu.net/
+https://www.frenchweb.fr/
 
 
 
