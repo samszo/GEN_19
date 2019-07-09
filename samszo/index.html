@@ -551,7 +551,7 @@ $('#infosEtu').on('show.bs.modal', function (e) {
     console.log(selectEtu);
 
     d3.select('#modalEtuTitle').text(selectEtu['Votre prénom']+' '+selectEtu['Votre nom']);
-    var url = "diigo.php?user="+selectEtu['Votre compte Diigo'];
+    var url = "http://www.samszo.univ-paris8.fr/DWM/18-19/diigo.php?user="+selectEtu['Votre compte Diigo'];
     var htm = '<p><a href="'+url+'">'+url+'</a></p>';
     htm += '<iframe id="ifDiigoEtu" title="Diigo étudiant" src="'+url+'"></iframe>';
     d3.select('#diigoTags').html(htm);
