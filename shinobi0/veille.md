@@ -20,6 +20,11 @@ Se tenir informée des dernières actualités et mise à jour du framework
 Se tenir informée des dernières actualités et mise à jour du language
 ### PWA Progressive Web App
 ### W3C
+### internet des objets
+### outil de développement web
+### my sql workbench
+### visual studio code
+### hackathon
 
 ## Les newsletters
 
