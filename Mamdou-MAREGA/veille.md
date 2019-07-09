@@ -10,11 +10,23 @@ pour récupérer les dérnières informations sur le css3
 
 ###javascript
 
+documentation
+
 ###php
+
+documentation
 
 ###java
 
+documentation
+
 ### c++
+
+documentation
+
+###mySql
+
+documentation
 
 ## Les flux rss
 
@@ -28,6 +40,8 @@ pour suivre l'actualité concernant les cours , concours , résultats ..
 ### monde des grandes écoles et universités
 
 suivre les informations concernant les études supérieures
+
+### quora
 
 ## sport
 pour suivre les résultats , les transferts ..
@@ -43,8 +57,6 @@ https://www.diigo.com/profile/mamadou93
 ### Pinterest
 
 recevoir des notifications sur le vocabulaire anglais
-
-### quora
 
 ### linkedln
 
