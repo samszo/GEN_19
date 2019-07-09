@@ -1,19 +1,24 @@
-alerts
+<h1> Mes informations </h1>
 
-<h1>Dev Web etalerts mobile</h1>
 
 <h1>Newsletters</h1>
 
+https://www.lemondeinformatique.fr</a>
+
+https://www.bfast-developpement.com/
+
+http://www.internetactu.net/
+
+https://forums.cnetfrance.fr/forum/6-informatique-generale/
+
+
+<h1>Flux RSS<h1>
+
+<h1>Diingo<h1>
 
 
 
 
-<h2>L'actualité du monde Informatique</h2>
 
 
-Ceci est un paragraphe
-
-Encore un !
-
-News informatiques 
 
