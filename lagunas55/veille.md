@@ -10,8 +10,6 @@
 1. internet actu.com
 2. sydologie.com/outils/diigo/
 
-# netvibes #
-
 # quora #
 1. forum questions réponses
 
