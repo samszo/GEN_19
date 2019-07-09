@@ -7,7 +7,7 @@
 1. https://www.google.com
 2. https://www.notrefamille.com/dictionnaire/definition/numerique
 # diigo #
-1. internet actu.com
+1. http://wwwinternet actu.com
 
 # quora #
 1. forum questions réponses
