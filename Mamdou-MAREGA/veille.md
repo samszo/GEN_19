@@ -14,7 +14,7 @@ documentation
 
 ###php
 
-documentation
+mise a jour de la derniere version
 
 ###java
 
@@ -49,19 +49,19 @@ https://devdocs.io/css/css_fonts
 
 ### quora
 
+https://fr.quora.com/
+
 ##diigo
 
 https://www.diigo.com/profile/mamadou93
 
 ## les newletters
 
-### Pinterest
+https://www.pinterest.fr/librairieint/anglais/ 
 
-recevoir des notifications sur le vocabulaire anglais
+https://www.linkedin.com/jobs/?originalSubdomain=fr 
 
-### linkedln
-
-recevoir des notifications sur les entreprises qui recrutent dans le domaine de l'informatique.
+https://www.reussir-toeic.com/vocabulaire-toeic-112-mots-anglais-sur-le-theme-de-linformatique/ 
 
 
 
