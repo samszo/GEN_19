@@ -14,5 +14,5 @@
 <h8>Diigo est un site web de partage de signets (social bookmarking) qui permet de partager des pages web et d’y ajouter des tags et des annotations.</h8>
 
 
-<h9>Netvibes</h9>
+<h9>Netvibes:</h9>
 <h10>Netvibes offre à ses utilisateurs un site web personnel constitué par des pages onglets. Ce site est, à toute fin pratique, un portail web individuel qui donne accès à une multitude de services. Chaque service se présente comme un bloc.</h10>
