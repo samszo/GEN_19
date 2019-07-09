@@ -1,8 +1,4 @@
-# fluxRSS qui signifie de suivre l'information en continue et aussi un outil pour faire la veille qui est une base de connaissance #
-# on a crée des netvibes #
-# on a vu des sources comme des forums et collège de france #
-# on a téléchargé l'application diigo et on a fait un compte #
-# on a téléchargé githup et on a crée un compte et remplire un formulaire pour le professeur #
+# fluxRSS qui signifie de suivre l'information en continue et aussi un outil pour faire la veille qui est une base de connaissance 
 # Ma veille de google #
 # 1. web
 # 2.  numérique? #
