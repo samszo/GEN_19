@@ -12,7 +12,7 @@ php
 
 java
 
-## Base de données
+### Base de données
 
 mySql
 
@@ -20,7 +20,7 @@ mongoDB
 
 oracle
 
-## Frameworks
+### Frameworks
 
 symfony
 
