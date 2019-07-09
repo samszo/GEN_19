@@ -3,7 +3,7 @@
 # 1. web
 # 2.  numérique? #
 # 3. informatique? #
-# ma veille sur new letters #
+# ma veille sur newsletters #
 1. https://www.google.com
 2. https://www.notrefamille.com/dictionnaire/definition/numerique
 # diigo #
@@ -14,5 +14,6 @@
 
 # quora #
 1. forum 
+# github #
 
 
