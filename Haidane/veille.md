@@ -19,11 +19,11 @@ https://www.reddit.com
 
 <h1>Flux RSS<h1>
 
-<h2>Diingo<h2>
+<h2>Diigo<h2>
   
   https://www.diigo.com/user/abdallah92
   
-  https://outlook.live.com/mail/inbox
+
   
 
 
