@@ -12,9 +12,23 @@ php
 
 java
 
-c++
+## Base de données
 
 mySql
+
+mongoDB
+
+oracle
+
+##Frameworks
+
+symfony
+
+laravel
+
+zend
+
+samane
 
 ## Les flux rss
 
