@@ -1,9 +1,8 @@
-<h1> Mes informations </h1>
+<h1> Mes informations du monde informatique Dev/web </h1>
 
 
-<h1>Newsletters</h1>
+<h2>Newsletters</h2>
 
-https://outlook.live.com/mail/inbox
 
 https://www.lemondeinformatique.fr</a>
 
@@ -13,16 +12,19 @@ http://www.internetactu.net/
 
 https://forums.cnetfrance.fr/forum/6-informatique-generale/
 
-
+https://www.reddit.com
 
 
 
 
 <h1>Flux RSS<h1>
 
-<h1>Diingo<h1>
+<h2>Diingo<h2>
   
   https://www.diigo.com/user/abdallah92
+  
+  https://outlook.live.com/mail/inbox
+  
 
 
 
