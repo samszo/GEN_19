@@ -1,4 +1,4 @@
-# fluxRSS qui signifie de suivre l'information en continue et aussi un outil pour faire la veille qui est une base de connaissance 
+
 # Ma veille de google #
 # 1. web
 # 2.  numérique? #
@@ -8,9 +8,11 @@
 2. https://www.notrefamille.com/dictionnaire/definition/numerique
 # diigo #
 1. internet actu.com
-2. tags
+2. sydologie.com/outils/diigo/
+
 # netvibes #
-1. flux RSS 
+
 # quora #
+1. forum 
 
 
