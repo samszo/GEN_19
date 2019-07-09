@@ -38,3 +38,18 @@ https://www.cidj.com/metiers/developpeur-developpeuse-web
 
 https://www.diigo.com/profile/mamadou93
 
+## les newletters
+
+### Pinterest
+
+recevoir des notifications sur le vocabulaire anglais
+
+### quora
+
+### linkedln
+
+recevoir des notifications sur les entreprises qui recrutent dans le domaine de l'informatique.
+
+
+
+
