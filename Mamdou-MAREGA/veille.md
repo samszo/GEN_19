@@ -33,7 +33,7 @@ quora
 
 https://fr.quora.com/
 
-###diigo
+diigo
 
 https://www.diigo.com/profile/mamadou93
 
