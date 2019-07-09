@@ -29,10 +29,6 @@ pour suivre l'actualité concernant les cours , concours , résultats ..
 
 suivre les informations concernant les études supérieures
 
-quora
-
-https://fr.quora.com/
-
 diigo
 
 https://www.diigo.com/profile/mamadou93
