@@ -16,7 +16,10 @@ Javascript
 
 Ruby
 
-<h3>Newsletter</h3>
+<h3>Diigo</h3>
 
-<a href="https://www.30millionsdamis.fr/uploads/pics/conseils-erreurs-chat-1171.jpg" alt="Voici l'image d'un chat!">
+Extension permettant d'annoter et de marquer les pages.
 
+<h3>Netvibes</h3>
+
+Dashboard qui permet de choisir les thématiques dont nous voulons être tenus à jour via les flux RSS.
