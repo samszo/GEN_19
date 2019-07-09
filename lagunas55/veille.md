@@ -1,9 +1,10 @@
 
-# Ma veille de google #
+# Ma veille de google et nesletters #
+# alertes de google #
 # 1. web
 # 2.  numérique? #
 # 3. informatique? #
-# ma veille sur newsletters #
+# alertes de newsletters #
 1. https://www.google.com
 2. https://www.notrefamille.com/dictionnaire/definition/numerique
 # diigo #
