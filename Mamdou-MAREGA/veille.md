@@ -2,31 +2,19 @@
 
 ## Les alertes Google
 
-### HTML5
-Pour récupérer les dérnières informations sur HTML5
+HTML5
 
-### css3
-pour récupérer les dérnières informations sur le css3
+css3
 
 javascript
 
-documentation
+php
 
-###php
+java
 
-mise a jour de la derniere version
+c++
 
-###java
-
-documentation
-
-### c++
-
-documentation
-
-###mySql
-
-documentation
+mySql
 
 ## Les flux rss
 
