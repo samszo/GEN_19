@@ -26,6 +26,8 @@ Si Python est lent par rapport à d'autres langues, pourquoi l'utilisons-nous to
 
 Diigo est un site web qui permet de partager et trier des pages web en y ajoutant des tags et des annotations
 
+https://www.diigo.com/user/karimdmd
+
 ### Netvibes
 
 Netvibes est un site web personnalisable qui permet de trier des flux RSS dans des onglets
