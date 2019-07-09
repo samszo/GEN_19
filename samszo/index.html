@@ -128,126 +128,158 @@ function(data){
     });
     Fin de la boucle*/
 
-	//récupération des données du formulaire google
-	var url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSuAKEIAE6Ux96gYsHTE26mw7x25BBwWpTT128REFr67dk42njm5k5I3_R78Rg-9ppK-csdEQkCEJik/pub?output=csv';
-    //var url = "FormulaireGEN19.csv";        
-	d3.csv(url, function(data) {
-		dataForm = data;
-		
-		//réorganise les datas
-		dataForm.forEach(function(d){
-			d.reponses = {'besoins':[],'competences':[],'outils':[]};
-			for (let i in d) {
-				var prop = i.substring(i.indexOf("[")+1,i.indexOf("]")); 
-				var v = d[i];
-				var n = vals[v];
-				if(i.indexOf("besoins")>0){
-					d.reponses.besoins.push({'prop':prop,'importance':n,'expression':v,'id':d['N° photo']});
-					//d.reponses.push({'besoins':prop,'val':n,'lib':v});
-				}
-				if(i.indexOf("compétences")>0){
-					d.reponses.competences.push({'prop':prop,'importance':n,'expression':v,'id':d['N° photo']});
-				}
-				if(i.indexOf("outils utilisez")>0){
-					d.reponses.outils.push({'prop':prop,'importance':n,'expression':v,'id':d['N° photo']});
-				}							
-			}
-		});		
-		
-		
-		/*construction simple
-		var arrDiv = d3.select("#container")
-	  		.selectAll("div")
-	  		.data(data)
-	  		.enter().append("div")
-		    .text(function(d) { 
-		    		return d['Votre prénom'].toLowerCase() + ' ' + d['Votre nom'].toLowerCase(); 
-		    	});		
-		arrDiv.append("img")
-		    .attr('src',function(d) { 
-		    		var item = dataPhoto.photoset.photo[d['N° photo']];
-		        var src = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_s.jpg';
-	    			return src; 
-	    		});
-		*/
-		
-		/*construction bootstrap
-		merci à https://getbootstrap.com/docs/4.0/components/card/
-			<div class="col-sm-3 mb-4">
-		  <div class="card">
-				<img class="card-img img-fluid" src="<?php echo $picture_link; ?>" alt="Card image">
-				<p class="card-text"><?php echo $value['Prénom']; ?> <br> <?php echo $value['Nom']; ?> <br>
-				<small class="text-muted"><?php echo $value['E-mail']; ?></small>
-				</p>
-		  </div>
-		</div>
+    //récupération des données des formulaires google
+    //"FormulaireGEN19.csv";//
+    var url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSuAKEIAE6Ux96gYsHTE26mw7x25BBwWpTT128REFr67dk42njm5k5I3_R78Rg-9ppK-csdEQkCEJik/pub?output=csv'            
+    var q = d3.queue()
+    .defer(d3.csv, url)
+    .defer(d3.csv, 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTOMGeNwb-DoechnH4p4xKS87Ts7apNS4-G9lLHhXW_90BP8ZsW4oRNKObk26hM5CW-0wA2mEqg1kaO/pub?output=csv')
+    .defer(d3.csv, "https://docs.google.com/spreadsheets/d/e/2PACX-1vSU64xUyplV3dYOk0py1DQBeOGvQzPVGdODSJNF_Ovzttk3Y2Q3GjLvM32i-Q5iF0wGbKTusd0Vkk3V/pub?output=csv")
+    .defer(d3.csv, "https://docs.google.com/spreadsheets/d/e/2PACX-1vTcwupv5MffoFjJlmzdfp9VtGXLzhgfeLGKwqU5FXGduExFPZt3BgvXQrk3q4SketD8_i61Qs1kszEj/pub?output=csv")
+    .awaitAll(function(error, results) {
+      if (error) throw error;
+      setData(results);
+    });
 
-		*/
-		var cards = d3.select('#etuCards').selectAll(".col-sm-4 mb-12").data(dataForm).enter()
-			.append('div').attr('class','col-sm-4 mb-12').style('margin-bottom','10px')
-			.append("div").attr('class','card');
-	  	cards.append("img")
-	  			.attr('id',function(d) {return 'imgCard'+d['N° photo']})
-	  			.attr('class','card-img-top')
-	  			.attr('src',function(d) { 
-                    if(d['N° photo']==-1)src = 'http://www.samszo.univ-paris8.fr/ChaoticumPapillonae/CreaPapiDynaAnim.php?anim=0&larg=348&haut=261&id=svgPapiLogo#'+d['N° photo']
-		    		else{
-                        let numPhoto = parseInt(d['N° photo'])-1;
-                        var item = dataPhoto.photoset.photo[numPhoto];
-                        console.log(d);
-                        var src = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_z.jpg';
-                    }	
-                    return src; 
+});
+    function setData(data){
+
+            dataForm = data[0];
+            let dataEtu = []; 
+            //ajoute les sites perso
+            data[1].forEach(function(d){
+                if(!dataEtu[d.identifiant])dataEtu[d.identifiant]={};
+                dataEtu[d.identifiant].site = d['url de votre site']; 
+            })
+            //ajoute les newletters
+            data[2].forEach(function(d){
+                if(!dataEtu[d.Identifiant])dataEtu[d.Identifiant]={'newletters':[]};
+                if(!dataEtu[d.Identifiant].newletters)dataEtu[d.Identifiant].newletters=[];
+                dataEtu[d.Identifiant].newletters.push(d['Adresse du site']); 
+            })
+            //ajoute les alertes
+            data[3].forEach(function(d){
+                if(!dataEtu[d.identifiant])dataEtu[d.identifiant]={'alertes':[]};
+                if(!dataEtu[d.identifiant].alertes)dataEtu[d.identifiant].alertes=[];
+                dataEtu[d.identifiant].alertes.push(d["requête de l'alerte"]); 
+            })
+
+
+            //réorganise les datas
+            dataForm.forEach(function(d){
+                d.reponses = {'besoins':[],'competences':[],'outils':[]};
+                for (let i in d) {
+                    var prop = i.substring(i.indexOf("[")+1,i.indexOf("]")); 
+                    var v = d[i];
+                    var n = vals[v];
+                    if(i.indexOf("besoins")>0){
+                        d.reponses.besoins.push({'prop':prop,'importance':n,'expression':v,'id':d['N° photo']});
+                        //d.reponses.push({'besoins':prop,'val':n,'lib':v});
+                    }
+                    if(i.indexOf("compétences")>0){
+                        d.reponses.competences.push({'prop':prop,'importance':n,'expression':v,'id':d['N° photo']});
+                    }
+                    if(i.indexOf("outils utilisez")>0){
+                        d.reponses.outils.push({'prop':prop,'importance':n,'expression':v,'id':d['N° photo']});
+                    }							
+                }
+                d.site = dataEtu[d.Identifiant] ? dataEtu[d.Identifiant].site : '';
+                d.alertes = dataEtu[d.Identifiant] ? dataEtu[d.Identifiant].alertes : [];
+                d.newletters = dataEtu[d.Identifiant] ? dataEtu[d.Identifiant].newletters : [];
+            });		
+
+            /*construction simple
+            var arrDiv = d3.select("#container")
+                .selectAll("div")
+                .data(data)
+                .enter().append("div")
+                .text(function(d) { 
+                        return d['Votre prénom'].toLowerCase() + ' ' + d['Votre nom'].toLowerCase(); 
+                    });		
+            arrDiv.append("img")
+                .attr('src',function(d) { 
+                        var item = dataPhoto.photoset.photo[d['N° photo']];
+                    var src = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_s.jpg';
+                        return src; 
                     });
-	  	//ajoute l'overlay sur l'image pour le tooltip du diagramme
-	  	cards.append("div")
-	  			.attr('id',function(d) {return 'imgOver'+d['N° photo']})
-	  			.attr('class','card-img-overlay')
-                .style('height','50%')
-                .on("click",function(e){
-                    console.log(e);
-                    selectEtu = e;
-                    $('#infosEtu').modal('show');
-                });
+            */
 
-  		//ajoute le corps de la carte
-		var cardBody = cards.append('div').attr('class','card-body');
-		cardBody.append('h4').attr('class','card-title')	  			
-	    			.text(function(d) { 
-		    			return d['Votre prénom'].toLowerCase(); 
-				    		});
-		cardBody.append('h5').attr('class','card-title')	  			
-			.text(function(d) { 
-				return d['Votre nom'].toLowerCase(); 
-		    		});
-        cardBody.append('h6').text("plus d'infos...")
-            .on("click",function(e){
+            /*construction bootstrap
+            merci à https://getbootstrap.com/docs/4.0/components/card/
+                <div class="col-sm-3 mb-4">
+            <div class="card">
+                    <img class="card-img img-fluid" src="<?php echo $picture_link; ?>" alt="Card image">
+                    <p class="card-text"><?php echo $value['Prénom']; ?> <br> <?php echo $value['Nom']; ?> <br>
+                    <small class="text-muted"><?php echo $value['E-mail']; ?></small>
+                    </p>
+            </div>
+            </div>
+
+            */
+            var cards = d3.select('#etuCards').selectAll(".col-sm-4 mb-12").data(dataForm).enter()
+                .append('div').attr('class','col-sm-4 mb-12').style('margin-bottom','10px')
+                .append("div").attr('class','card');
+            cards.append("img")
+                    .attr('id',function(d) {return 'imgCard'+d['N° photo']})
+                    .attr('class','card-img-top')
+                    .attr('src',function(d) { 
+                        if(d['N° photo']==-1)src = 'http://www.samszo.univ-paris8.fr/ChaoticumPapillonae/CreaPapiDynaAnim.php?anim=0&larg=348&haut=261&id=svgPapiLogo#'+d['N° photo']
+                        else{
+                            let numPhoto = parseInt(d['N° photo'])-1;
+                            var item = dataPhoto.photoset.photo[numPhoto];
+                            console.log(d);
+                            var src = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_z.jpg';
+                        }	
+                        return src; 
+                        });
+            //ajoute l'overlay sur l'image pour le tooltip du diagramme
+            cards.append("div")
+                    .attr('id',function(d) {return 'imgOver'+d['N° photo']})
+                    .attr('class','card-img-overlay')
+                    .style('height','50%')
+                    .on("click",function(e){
                         console.log(e);
                         selectEtu = e;
                         $('#infosEtu').modal('show');
                     });
 
-		//construction du layout pour les graphiques
-		var html = '<div class="container"><div class="row">';
-		html += '<div id="etudNum__Col1" class="col-sm" style="padding-right:0px;padding-left:0px;"></div>';
-		html += '<div id="etudNum__Col2" class="col-sm" style="padding-right:0px;padding-left:0px;"></div>';
-		html += '<div id="etudNum__Col3" class="col-sm" style="padding-right:0px;padding-left:0px;"></div>';
-		html += '</div></div>';
-		cardBody.append('div').attr('class','card-text').attr('id',function(d, i) { return 'etudNum_'+i; })
-			.html(function(d, i) { return html.replace(/__/gi, "_"+i+"_");});	  			
-		cards.append('div').attr('class','card-footer')
-			.append('small').attr('class','text-muted')
-			.text(function(d, i) {
-					//charge le graph des réponses
-                    var size = 100;
-					drawGraphReponse("#etudNum_"+i+"_Col1", 'Besoins', d.reponses.besoins, size);
-					drawGraphReponse("#etudNum_"+i+"_Col2", 'Compétences', d.reponses.competences, size);
-					drawGraphReponse("#etudNum_"+i+"_Col3", 'Outils', d.reponses.outils, size);
-		    			return d['Votre mail'].toLowerCase(); 
-                            });
-		
-	});
-});
+            //ajoute le corps de la carte
+            var cardBody = cards.append('div').attr('class','card-body');
+            cardBody.append('h4').attr('class','card-title')	  			
+                        .text(function(d) { 
+                            return d['Votre prénom'].toLowerCase(); 
+                                });
+            cardBody.append('h5').attr('class','card-title')	  			
+                .text(function(d) { 
+                    return d['Votre nom'].toLowerCase(); 
+                        });
+            cardBody.append('h6').text("plus d'infos...")
+                .on("click",function(e){
+                            console.log(e);
+                            selectEtu = e;
+                            $('#infosEtu').modal('show');
+                        });
+
+            //construction du layout pour les graphiques
+            var html = '<div class="container"><div class="row">';
+            html += '<div id="etudNum__Col1" class="col-sm" style="padding-right:0px;padding-left:0px;"></div>';
+            html += '<div id="etudNum__Col2" class="col-sm" style="padding-right:0px;padding-left:0px;"></div>';
+            html += '<div id="etudNum__Col3" class="col-sm" style="padding-right:0px;padding-left:0px;"></div>';
+            html += '</div></div>';
+            cardBody.append('div').attr('class','card-text').attr('id',function(d, i) { return 'etudNum_'+i; })
+                .html(function(d, i) { return html.replace(/__/gi, "_"+i+"_");});	  			
+            cards.append('div').attr('class','card-footer')
+                .append('small').attr('class','text-muted')
+                .text(function(d, i) {
+                        //charge le graph des réponses
+                        var size = 100;
+                        drawGraphReponse("#etudNum_"+i+"_Col1", 'Besoins', d.reponses.besoins, size);
+                        drawGraphReponse("#etudNum_"+i+"_Col2", 'Compétences', d.reponses.competences, size);
+                        drawGraphReponse("#etudNum_"+i+"_Col3", 'Outils', d.reponses.outils, size);
+                return d['Votre mail'].toLowerCase(); 
+                    });
+
+}
 
 function drawGraphReponse(idE, titre, data, size){
 	/*à voir si dimple marche mieux
@@ -555,7 +587,7 @@ $('#infosEtu').on('show.bs.modal', function (e) {
     var htm = '<p><a href="'+url+'">'+url+'</a></p>';
     htm += '<iframe id="ifDiigoEtu" title="Diigo étudiant" src="'+url+'"></iframe>';
     d3.select('#diigoTags').html(htm);
-    url = "http://www.samszo.univ-paris8.fr/DWM/18-19/etudiants/"+selectEtu['site perso'];
+    url = selectEtu['site'];
     htm = '<p><a href="'+url+'">'+url+'</a></p>';
     htm += '<iframe id="ifSitePerso" title="Site Perso" src="'+url+'"></iframe>';
     d3.select('#sitePerso').html(htm);
