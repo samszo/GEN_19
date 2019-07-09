@@ -41,14 +41,15 @@ pour suivre l'actualité concernant les cours , concours , résultats ..
 
 suivre les informations concernant les études supérieures
 
-### quora
-
-## sport
-pour suivre les résultats , les transferts ..
-
-##diigo
+### developpement informatique
 
 https://www.cidj.com/metiers/developpeur-developpeuse-web
+
+https://devdocs.io/css/css_fonts
+
+### quora
+
+##diigo
 
 https://www.diigo.com/profile/mamadou93
 
@@ -61,6 +62,8 @@ recevoir des notifications sur le vocabulaire anglais
 ### linkedln
 
 recevoir des notifications sur les entreprises qui recrutent dans le domaine de l'informatique.
+
+
 
 
 
