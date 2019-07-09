@@ -29,27 +29,27 @@ pour suivre l'actualité concernant les cours , concours , résultats ..
 
 suivre les informations concernant les études supérieures
 
-### developpement informatique
-
-https://www.cidj.com/metiers/developpeur-developpeuse-web
-
-https://devdocs.io/css/css_fonts
-
 quora
 
 https://fr.quora.com/
 
-##diigo
+###diigo
 
 https://www.diigo.com/profile/mamadou93
 
-## les newletters
+### les newletters
 
 https://www.pinterest.fr/librairieint/anglais/ 
 
 https://www.linkedin.com/jobs/?originalSubdomain=fr 
 
 https://www.reussir-toeic.com/vocabulaire-toeic-112-mots-anglais-sur-le-theme-de-linformatique/ 
+
+https://www.cidj.com/metiers/developpeur-developpeuse-web
+
+https://devdocs.io/css/css_fonts
+
+
 
 
 
