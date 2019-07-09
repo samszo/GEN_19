@@ -16,6 +16,10 @@ Se tenir informée des dernières actualités et mise à jour du language
 Se tenir informée des dernières actualités et mise à jour du framework
 ### Laravel
 Se tenir informée des dernières actualités et mise à jour du framework
+### Javascript
+Se tenir informée des dernières actualités et mise à jour du language
+### PWA Progressive Web App
+### W3C
 
 ## Les newsletters
 
@@ -30,6 +34,8 @@ Je vais utiliser plus les flux que les newsletters afin de limiter le bruit susc
 [Blog semrush](https://fr.semrush.com/blog/)
 
 [blog Les Jeudis](https://blog.lesjeudis.com/)
+
+[Blog TLDR](https://www.tldrnewsletter.com)
 
 ## Diggo
 Bookmarquer les pages d'articles interressantes
