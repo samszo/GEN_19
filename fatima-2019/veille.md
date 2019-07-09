@@ -5,6 +5,8 @@ le écosystem est comme un jardin,dabord on met les grains,on met l'eau, et apre
 netvibes est un util pour fair ville sur web,ou on suivre des ceintenes des surce informatique.sur le netvibes on a vu
 # flux rss #
 # Les alerts #
+html
+css
 # Newsletter #
 internetactu
 # Diigo #
