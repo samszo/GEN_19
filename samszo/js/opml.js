@@ -10,7 +10,18 @@ class opml{
         this.init = function () {
 
             d3.xml(me.urlData, function(error, data) {
-                if (error) throw error;
+                //récupère le conteneur et sa taille
+                let cont = d3.select('#'+me.idCont);
+                let h = cont.node().offsetHeight-100;                
+
+                //initalisation de la visualisation
+                d3.select('#nb-opml').remove();
+                d3.select('#content-opml').remove();
+                
+                if (error){
+                    cont.html(error);
+                    return;
+                }
                 me.data = data;
 
                 //récupère la définition du dashboard
@@ -21,10 +32,11 @@ class opml{
                     };
                 });
                 //récupère les flux
-                let arrGroup = [], nbGroup=1, arrFlux = [];
+                let arrGroup = [], nbGroup=1, arrFlux = [], arrRss = [];
                 data.querySelectorAll("outline").forEach(function(outline) {
                     if(outline.getAttribute("icon")=="rss"){
                         outline.querySelectorAll("outline").forEach(function(rss, i) {
+                            console.log(rss);
                             if(!arrGroup[outline.getAttribute("title")]){
                                 arrGroup[outline.getAttribute("title")]=nbGroup;
                                 me.flux.push({title: outline.getAttribute("title"),'rss':[]});
@@ -32,14 +44,15 @@ class opml{
                             }
                             let idGroup = arrGroup[outline.getAttribute("title")]-1; 
                             if(!arrFlux[rss.getAttribute("title")]){
-                                me.flux[idGroup].rss.push(
-                                    {
-                                        title: rss.getAttribute("title"),
-                                        xmlUrl: rss.getAttribute("xmlUrl"),
-                                        htmlUrl: rss.getAttribute("creationDate")
-                                    }                                
-                                )    
+                                let oRss = {
+                                    'idRss':'rssG'+idGroup+'F'+i,
+                                    title: rss.getAttribute("title"),
+                                    xmlUrl: rss.getAttribute("xmlUrl"),
+                                    htmlUrl: rss.getAttribute("creationDate")
+                                }                                
+                                me.flux[idGroup].rss.push(oRss);
                                 arrFlux[rss.getAttribute("title")]=1;
+                                arrRss.push(oRss);
                             }else{
                                 arrFlux[rss.getAttribute("title")]+=1;
                             }
@@ -55,6 +68,87 @@ class opml{
                 */
 
                 //construction de la visualisation
+                let nbOpml = cont.append('nav')
+                    .attr('id','nb-opml')
+                    .attr('class','navbar navbar-light bg-light')
+                    .append('a')
+                    .attr('class','navbar-brand')
+                    .attr('href','#')
+                    .html('Flux RSS')
+                    .append('ul')
+                    .attr('class','nav nav-pills')
+                    ;
+                let groupe = nbOpml.selectAll('li').data(me.flux).enter().append('li')
+                    .attr('class','nav-item dropdown')
+                    .append('a')
+                    .attr('class','nav-link dropdown-toggle')
+                    .attr('data-toggle','dropdown')
+                    .attr('href','#')
+                    .attr('role','button')
+                    .attr('aria-haspopup','true')
+                    .attr('aria-expanded','false')
+                    .html(function(d){
+                        return d.title;
+                        })
+                    .append('div')
+                    .attr('class','dropdown-menu');
+
+                let rss = groupe.selectAll('a').data(function(d){
+                        return d.rss
+                    }).enter()
+                    .append('a')
+                    .attr('class','dropdown-item')
+                    //.style('z-index',1000)
+                    .attr('href',function(r, i){
+                        return '#'+r.idRss;
+                        })
+                    .on("click",function(d){
+                            console.log(d);
+                            location.href = "#"+d.idRss;
+                        })
+                    .html(function(r){
+                        return r.title;
+                        });
+                    
+                let nbContent = cont.append('div')
+                        .attr('id','content-opml')
+                        .attr('data-spy','scroll')
+                        .attr('data-target','nb-opml')
+                        .attr('data-offset','0')
+                        .style('height',h+'px')
+                        .style('overflow-y','scroll')                        
+                        .style('position','relative')                        
+                        ;
+                let rssContent = nbContent.selectAll('div').data(arrRss).enter()
+                        .append('div')
+                        .attr('id',function(r, i){
+                            return r.idRss;
+                            })
+                        .html(function(r){
+                            let htm = "<h4>"+r.title+"</h4>";
+                            //htm += '<iframe id="if'+r.idRss+'" title="'+r.title+'" src="'+r.xmlUrl+'"></iframe>';
+                            return htm;
+                            });
+                    rssContent.append('button')
+                        .attr('type',"button")
+                        .attr('class',"btn btn-warning")
+                        .html('Afficher le flux')
+                        .on('click',function(d){
+                            me.getRss(d);
+                        });
+                    rssContent.append('div')
+                        .attr('id',function(d){
+                            return 'ct'+d.idRss;
+                        });
+
+
+                //pour gérer les scrollspy
+                $('[data-spy="scroll"]').each(function () {
+                    var $spy = $(this).scrollspy('refresh')
+                    })
+                $('#nb-opml').scrollspy();
+
+                /*construction de la visualisation simple
                 d3.select('#'+me.idCont).html('');
                 let groupe = d3.select('#'+me.idCont).selectAll('ul').data(me.flux).enter()
                     .append('ul')
@@ -68,11 +162,29 @@ class opml{
                 .html(function(r){
                     return '<a href="'+r.xmlUrl+'" >'+r.title+'</a>';
                     });
+                */    
 
             });
 
            
         };
+
+        this.getRss = function (d) {
+           let u = 'http://localhost/jdc/public/flux/ajax';
+           let dt = {'u':d.xmlUrl};
+           $.ajax({
+                url: u,
+                type: 'GET',
+                data:dt,
+                crossDomain: true,
+                success: function(data) { 
+                    d3.select('#ct'+d.idRss).html(data); 
+                },
+                error: function(error) { 
+                    console.log(error); 
+                },
+            });            
+        }
 
         this.init();
     }
