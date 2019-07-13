@@ -183,7 +183,7 @@ class opml{
                 dataType: "xml",
                 crossDomain: true,
                 success: function(data) { 
-                    //construction du rss
+                    //construction du rss à partir d'atom
                     data.querySelectorAll("feed").forEach(function(feed) {
                         me.rss = [{
                             'title':feed.querySelector("title").textContent
@@ -205,21 +205,47 @@ class opml{
                             me.rss[0].entries.push(e);
                         });
                     });
-
-                    let liRss = d3.select('#ct'+d.idRss).append('ul').attr('class','list-unstyled').selectAll('li').data(me.rss[0].entries).enter()
+                    if(!me.rss[0]){
+                        //construction du rss à partir de rss
+                        data.querySelectorAll("channel").forEach(function(feed) {
+                            me.rss = [{
+                                'title':feed.querySelector("title").textContent
+                                ,'updated':feed.querySelector("lastBuildDate").textContent
+                                ,'entries':[]
+                            }];
+                            feed.querySelectorAll("item").forEach(function(entry) {
+                                //sélectionne la première image
+                                let e = {
+                                    'title':entry.querySelector("title").textContent
+                                    ,'updated':entry.querySelector("pubDate").textContent
+                                    ,'summary':entry.querySelector("description").textContent
+                                    ,'link':entry.querySelector("link").textContent
+                                };
+                                entry.querySelectorAll("category").forEach(function(cat) {
+                                    if(!e.category)e.category = [];
+                                    e.category.push(cat.textContent);                                
+                                });
+                                me.rss[0].entries.push(e);
+                            });
+                        });
+                    }
+                    //affichage du flux
+                    if(me.rss[0].entries.length){
+                        let liRss = d3.select('#ct'+d.idRss).append('ul').attr('class','list-unstyled').selectAll('li').data(me.rss[0].entries).enter()
                         .append('li').attr("class",'media'); 
-                    liRss.append('img')
-                        .style("height",'128px')
-                        .attr("class",'mr-3 img-thumbnail')
-                        .attr("src",function(d){return d.img});
-                    let divBody = liRss.append('div').attr("class",'media-body');
-                    divBody.append('h5').attr("class",'mt-0 mb-1').html(function(d){
-                        return d.title
-                    });
-                    //divBody.append('a').attr("href",function(d){return d.link}).html('détails');
-                    divBody.append('p').html(function(d){
-                        return d.summary+'   <a href="'+d.link+'" >en savoir plus</a>';
-                    });
+                        liRss.append('img')
+                            .style("height",'128px')
+                            .attr("class",'mr-3 img-thumbnail')
+                            .attr("src",function(d){return d.img});
+                        let divBody = liRss.append('div').attr("class",'media-body');
+                        divBody.append('h5').attr("class",'mt-0 mb-1').html(function(d){
+                            return d.title
+                        });
+                        //divBody.append('a').attr("href",function(d){return d.link}).html('détails');
+                        divBody.append('p').html(function(d){
+                            return d.summary+'   <a href="'+d.link+'" >en savoir plus</a>';
+                        });
+                    }
 
                 },
                 error: function(error) { 
