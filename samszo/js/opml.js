@@ -4,6 +4,7 @@ class opml{
         this.data = [];
         this.dashboard = [];
         this.flux = [];
+        this.rss = [];
         this.urlData = params.urlData ? params.urlData : false;
         this.idCont = params.idCont ? params.idCont : false;
 
@@ -19,7 +20,7 @@ class opml{
                 d3.select('#content-opml').remove();
                 
                 if (error){
-                    cont.html(error);
+                    cont.html('Aucun flux trouvé !');
                     return;
                 }
                 me.data = data;
@@ -34,21 +35,20 @@ class opml{
                 //récupère les flux
                 let arrGroup = [], nbGroup=1, arrFlux = [], arrRss = [];
                 data.querySelectorAll("outline").forEach(function(outline) {
-                    if(outline.getAttribute("icon")=="rss"){
+                    if(outline.getAttribute("icon")=="rss" || outline.getAttribute("icon")=="home"){
                         outline.querySelectorAll("outline").forEach(function(rss, i) {
-                            console.log(rss);
+                            //console.log(rss);
                             if(!arrGroup[outline.getAttribute("title")]){
                                 arrGroup[outline.getAttribute("title")]=nbGroup;
                                 me.flux.push({title: outline.getAttribute("title"),'rss':[]});
                                 nbGroup++;
                             }
                             let idGroup = arrGroup[outline.getAttribute("title")]-1; 
-                            if(!arrFlux[rss.getAttribute("title")]){
+                            if(!arrFlux[rss.getAttribute("title")] && rss.getAttribute("xmlUrl")){
                                 let oRss = {
                                     'idRss':'rssG'+idGroup+'F'+i,
-                                    title: rss.getAttribute("title"),
-                                    xmlUrl: rss.getAttribute("xmlUrl"),
-                                    htmlUrl: rss.getAttribute("creationDate")
+                                    'title': rss.getAttribute("title"),
+                                    'xmlUrl': rss.getAttribute("xmlUrl"),
                                 }                                
                                 me.flux[idGroup].rss.push(oRss);
                                 arrFlux[rss.getAttribute("title")]=1;
@@ -59,7 +59,11 @@ class opml{
                         });
                     }
                 });
-                console.log(me.flux);
+                //valide les flux
+                me.flux = me.flux.filter(function(f){
+                    return f.rss.length;
+                })
+                //console.log(me.flux);
 
                 /*récupère le contenu du flux
                 me.flux.forEach(function(f){
@@ -170,15 +174,53 @@ class opml{
         };
 
         this.getRss = function (d) {
-           let u = 'http://localhost/jdc/public/flux/ajax';
+           let u = 'https://jardindesconnaissances.univ-paris8.fr/jdc/public/flux/ajax';
            let dt = {'u':d.xmlUrl};
            $.ajax({
                 url: u,
                 type: 'GET',
                 data:dt,
+                dataType: "xml",
                 crossDomain: true,
                 success: function(data) { 
-                    d3.select('#ct'+d.idRss).html(data); 
+                    //construction du rss
+                    data.querySelectorAll("feed").forEach(function(feed) {
+                        me.rss = [{
+                            'title':feed.querySelector("title").textContent
+                            ,'updated':feed.querySelector("updated").textContent
+                            ,'entries':[]
+                        }];
+                        feed.querySelectorAll("entry").forEach(function(entry) {
+                            //sélectionne la première image
+                            let e = {
+                                'title':entry.querySelector("title").textContent
+                                ,'updated':entry.querySelector("updated").textContent
+                                ,'summary':entry.querySelector("summary").textContent
+                            };
+                            entry.querySelectorAll("link").forEach(function(link) {
+                                if(link.getAttribute("type")=='image/jpeg')e.img = link.getAttribute("href");                            
+                                if(link.getAttribute("type")=='text/html')e.link = link.getAttribute("href");                            
+
+                            });
+                            me.rss[0].entries.push(e);
+                        });
+                    });
+
+                    let liRss = d3.select('#ct'+d.idRss).append('ul').attr('class','list-unstyled').selectAll('li').data(me.rss[0].entries).enter()
+                        .append('li').attr("class",'media'); 
+                    liRss.append('img')
+                        .style("height",'128px')
+                        .attr("class",'mr-3 img-thumbnail')
+                        .attr("src",function(d){return d.img});
+                    let divBody = liRss.append('div').attr("class",'media-body');
+                    divBody.append('h5').attr("class",'mt-0 mb-1').html(function(d){
+                        return d.title
+                    });
+                    //divBody.append('a').attr("href",function(d){return d.link}).html('détails');
+                    divBody.append('p').html(function(d){
+                        return d.summary+'   <a href="'+d.link+'" >en savoir plus</a>';
+                    });
+
                 },
                 error: function(error) { 
                     console.log(error); 

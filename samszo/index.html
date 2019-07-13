@@ -74,9 +74,8 @@
 
 <div class="jumbotron">
   <h1 class="display-3">Grande Ecole du Numérique</h1>
-  <p class="lead">trombinoscope</p>
   <hr class="my-4">
-  <p>Promotion 2019</p>
+  <h2>Promotion 2019</h2>
 </div>
 
 	<div class="container">    
@@ -95,10 +94,10 @@
         <div class="modal-body" id="modalEtuBody" >
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" id="diigoTags-tab" data-toggle="tab" href="#diigoTags" role="tab" aria-controls="diigoTags" aria-selected="true">Diigo Tags</a>
+                    <a class="nav-link" id="sitePerso-tab" data-toggle="tab" href="#sitePerso" role="tab" aria-controls="sitePerso" aria-selected="false">Site Perso</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="sitePerso-tab" data-toggle="tab" href="#sitePerso" role="tab" aria-controls="sitePerso" aria-selected="false">Site Perso</a>
+                    <a class="nav-link" id="diigoTags-tab" data-toggle="tab" href="#diigoTags" role="tab" aria-controls="diigoTags" aria-selected="true">Diigo Tags</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="veilleRecap-tab" data-toggle="tab" href="#veilleRecap" role="tab" aria-controls="veilleRecap" aria-selected="false">Veilles</a>
@@ -108,7 +107,7 @@
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="diigoTags" role="tabpanel" aria-labelledby="diigoTags-tab">...</div>
+                <div class="tab-pane fade" id="diigoTags" role="tabpanel" aria-labelledby="diigoTags-tab">...</div>
                 <div class="tab-pane fade" id="sitePerso" role="tabpanel" aria-labelledby="sitePerso-tab">...</div>
                 <div class="tab-pane fade" id="veilleRecap" role="tabpanel" aria-labelledby="veilleRecap-tab">
    
@@ -248,7 +247,7 @@ function(data){
                         else{
                             let numPhoto = parseInt(d['N° photo'])-1;
                             var item = dataPhoto.photoset.photo[numPhoto];
-                            console.log(d);
+                            //console.log(d);
                             var src = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_z.jpg';
                         }	
                         return src; 
@@ -259,7 +258,7 @@ function(data){
                     .attr('class','card-img-overlay')
                     .style('height','50%')
                     .on("click",function(e){
-                        console.log(e);
+                        //console.log(e);
                         selectEtu = e;
                         $('#infosEtu').modal('show');
                     });
@@ -600,7 +599,7 @@ function donutChart() {
 //gestion des fenêtre modale
 //l'événement d'ouverture
 $('#infosEtu').on('show.bs.modal', function (e) {
-    console.log(e);
+    //console.log(e);
     console.log(selectEtu);
 
     d3.select('#modalEtuTitle').text(selectEtu['Votre prénom']+' '+selectEtu['Votre nom']);
@@ -612,11 +611,7 @@ $('#infosEtu').on('show.bs.modal', function (e) {
     htm = '<p><a href="'+url+'">'+url+'</a></p>';
     htm += '<iframe id="ifSitePerso" title="Site Perso" src="'+url+'"></iframe>';
     d3.select('#sitePerso').html(htm);
-    url = "http://www.samszo.univ-paris8.fr/DWM/18-19/projets/"+selectEtu['site projet'];
-    htm = '<p><a href="'+url+'">'+url+'</a></p>';
-    htm += '<iframe id="ifSitePerso" title="Recapitualitif de la veille" src="'+url+'"></iframe>';
-    //d3.select('#veilleRecap').html(htm);
-
+ 
     /*selectEtu['Votre compte Diigo']
     ht= '<div class="diigo-tags">';
     ht += '<div class="diigo-banner sidebar-title" style="font: bold 12px arial;margin-bottom:5px;">';
@@ -635,7 +630,7 @@ $('#infosEtu').on('show.bs.modal', function (e) {
 })
 //l'événement de fin d'ouverture
 $('#infosEtu').on('shown.bs.modal', function (e) {
-    console.log(e);
+    //console.log(e);
     /**Création du script 
      * merci à https://www.journaldunet.fr/web-tech/developpement/1202955-comment-inclure-un-fichier-javascript-dans-un-autre-fichier-javascript/
     var js = document.createElement('script');
@@ -646,13 +641,27 @@ $('#infosEtu').on('shown.bs.modal', function (e) {
 
     //pour mettre le contenu des tabs à 100%
     d3.select("#myTabContent").style('height',d3.select("#modalEtuBody").style('height'));
+    //affiche la tab du site perso
+    $('#sitePerso').tab('show');
     
 })
 
 //gestion des ouverture de tab
 $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
   if(e.target.id=='veilleRecap-tab'){
-        $('#navbar-example2').scrollspy();
+        //initiale la tab
+        d3.select('#veilleRecapDiv').remove();
+        let divRecapVeille = d3.select('#veilleRecap').append('div').attr('id','veilleRecapDiv');
+        //affiche la veille
+        if(selectEtu['alertes']){
+            let ulAG = divRecapVeille.append('h5').html('Alertes Google').append('ul');
+            ulAG.selectAll('li').data(selectEtu['alertes']).enter().append('li').html(function(d){return d;});
+        }else divRecapVeille.append('h5').html("Aucunne alertes Google");        
+        if(selectEtu['alertes']){
+            let ulNL = divRecapVeille.append('h5').html('Newsletter').append('ul');
+            ulNL.selectAll('li').data(selectEtu['newletters']).enter().append('li')
+            .html(function(d){return '<a href="'+d+'" target="_blank">'+d+'</a>';});
+        }else divRecapVeille.append('h5').html("Aucunne Newsletter");        
   }
   if(e.target.id=='rssFlux-tab'){
         let urlBaseGit = 'https://raw.githubusercontent.com/samszo/GEN_19/master/'+selectEtu['Votre compte GitHub']+'/dashboard.xml'    
