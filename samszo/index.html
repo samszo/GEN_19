@@ -248,7 +248,9 @@ function(data){
                             let numPhoto = parseInt(d['N° photo'])-1;
                             var item = dataPhoto.photoset.photo[numPhoto];
                             //console.log(d);
-                            var src = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_z.jpg';
+                            let taille = "q";//Large Square
+                            //let taille = "z";//grande photo
+                            var src = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_'+taille+'.jpg';
                         }	
                         return src; 
                         });
