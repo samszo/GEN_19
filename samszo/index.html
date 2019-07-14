@@ -109,9 +109,7 @@
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade" id="diigoTags" role="tabpanel" aria-labelledby="diigoTags-tab">...</div>
                 <div class="tab-pane fade" id="sitePerso" role="tabpanel" aria-labelledby="sitePerso-tab">...</div>
-                <div class="tab-pane fade" id="veilleRecap" role="tabpanel" aria-labelledby="veilleRecap-tab">
-   
-                </div>
+                <div class="tab-pane fade" id="veilleRecap" role="tabpanel" aria-labelledby="veilleRecap-tab"></div>
                 <div class="tab-pane fade" id="rssFlux" role="tabpanel" aria-labelledby="rssFlux-tab"></div>
             </div>
         </div>
@@ -653,17 +651,28 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
   if(e.target.id=='veilleRecap-tab'){
         //initiale la tab
         d3.select('#veilleRecapDiv').remove();
-        let divRecapVeille = d3.select('#veilleRecap').append('div').attr('id','veilleRecapDiv');
-        //affiche la veille
+        let divRecapVeille = d3.select('#veilleRecap').append('div')
+            .attr('id','veilleRecapDiv')
+            .attr('style','height: 100%;overflow:scroll;');
+        //affichage de la présentation au format .md
+        var url = "../"+selectEtu['Votre compte GitHub']+"/veille.md";
+        var cont = divRecapVeille.append('div');
+        mdToHtml(url,cont);
+        //affiche la veille des formulaires
+        divRecapVeille.append('h1').html('Réponses aux formulaires').append('ul');
         if(selectEtu['alertes']){
-            let ulAG = divRecapVeille.append('h5').html('Alertes Google').append('ul');
+            divRecapVeille.append('h2').html('Alertes Google');
+            let ulAG = divRecapVeille.append('ul');
             ulAG.selectAll('li').data(selectEtu['alertes']).enter().append('li').html(function(d){return d;});
-        }else divRecapVeille.append('h5').html("Aucunne alertes Google");        
+        }else divRecapVeille.append('h2').html("Aucunne alertes Google");        
         if(selectEtu['alertes']){
-            let ulNL = divRecapVeille.append('h5').html('Newsletter').append('ul');
+            divRecapVeille.append('h2').html('Newsletter')
+            let ulNL = divRecapVeille.append('ul');
             ulNL.selectAll('li').data(selectEtu['newletters']).enter().append('li')
             .html(function(d){return '<a href="'+d+'" target="_blank">'+d+'</a>';});
-        }else divRecapVeille.append('h5').html("Aucunne Newsletter");        
+        }else divRecapVeille.append('h2').html("Aucunne Newsletter");
+
+                
   }
   if(e.target.id=='rssFlux-tab'){
         let urlBaseGit = 'https://raw.githubusercontent.com/samszo/GEN_19/master/'+selectEtu['Votre compte GitHub']+'/dashboard.xml'    
@@ -676,9 +685,28 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 */
 })
 
+function mdToHtml(u, cont){
+
+    $.ajax({
+        url: u,
+        type: 'GET',
+        crossDomain: true,
+        success: function(data) { 
+            var converter = new showdown.Converter(),
+            html      = converter.makeHtml(data);
+            cont.html(html);
+        },
+        error: function(error) { 
+            console.log(error); 
+        },
+    });         
+}
+
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js" crossorigin="anonymous"></script>
+
 <script src="js/opml.js" ></script>
 
 </body>
